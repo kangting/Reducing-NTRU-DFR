@@ -1,0 +1,170 @@
+{
+  "status": "conditional GSA estimate; no basis reduction or recovery run",
+  "parameter_source": "ntru/par.json",
+  "parameters": {
+    "n": 512,
+    "q": 211,
+    "first_dim": 508
+  },
+  "subset": {
+    "definition": "exactly one odd-parity f block among accepted keys",
+    "per_block_odd_probability": "9/256",
+    "f_acceptance_probability": 0.4999557304662835,
+    "accepted_key_probability": 0.09556930605691644,
+    "g_nonzero_condition_cancels": true
+  },
+  "conditional_a_law": {
+    "known_zero_block": 0,
+    "independent_other_blocks": 127,
+    "rows": [
+      {
+        "atom": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "probability": "128/247"
+      },
+      {
+        "atom": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "probability": "119/1976"
+      },
+      {
+        "atom": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "probability": "119/1976"
+      }
+    ],
+    "coefficient_variance": "119/988"
+  },
+  "second_moments": {
+    "g_covariance_before_acceptance": [
+      [
+        "187/1024",
+        "51/1024",
+        "0",
+        "-51/1024"
+      ],
+      [
+        "51/1024",
+        "187/1024",
+        "51/1024",
+        "0"
+      ],
+      [
+        "0",
+        "51/1024",
+        "187/1024",
+        "51/1024"
+      ],
+      [
+        "-51/1024",
+        "0",
+        "51/1024",
+        "187/1024"
+      ]
+    ],
+    "g_effective_variance": 0.1684874576236013,
+    "g_all_zero_probability": 7.594233288622397e-43,
+    "g_nonzero_covariance_factor": "1/(1-P[g=0]); below binary64 resolution here",
+    "scale_first_component": 1.1827386256364594,
+    "embedding_height": 0.4104722373359754
+  },
+  "lattice": {
+    "relation": "gbar = h + (1+y)*h*a (mod q); block 0 of a is zero",
+    "dimension": "508+s+1",
+    "determinant": "q^s * xi^508 * sqrt(b)",
+    "criterion": "delta_beta^(2*beta-d-1)*D^(1/d) >= sqrt(beta*b)",
+    "projection": "complete four-coefficient blocks after determinant-one whitening",
+    "normalization_guess_factor": 1
+  },
+  "result": {
+    "beta": 409,
+    "dimension": 821,
+    "retained_second_coordinates": 312,
+    "log_margin": 0.004535363261100933,
+    "criterion_ratio": 1.0045456635870755,
+    "log2_determinant": 2530.700997001208,
+    "classical_leading_sieve_exponent": 119.428,
+    "quantum_leading_sieve_exponent": 105.113
+  },
+  "previous_beta": {
+    "beta": 408,
+    "dimension": 821,
+    "retained_second_coordinates": 312,
+    "log_margin": -0.0021073800186992564,
+    "criterion_ratio": 0.9978948389475636,
+    "log2_determinant": 2530.700997001208
+  },
+  "interpretation": [
+    "The subset fraction is not a measured key-recovery success rate.",
+    "With conditional recovery success s_rec, whole-key-distribution success contribution is p1*s_rec.",
+    "Retrying a fixed target does not change its membership in the subset.",
+    "The exponents count leading sieve work, not concrete gate counts or a Category 1 certification.",
+    "The quantum exponent uses the manuscript quantum-random-access-memory model."
+  ]
+}

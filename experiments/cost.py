@@ -1,4 +1,8 @@
-"""Reproduce the coefficient-variance and block-covariance GSA estimates."""
+"""Reproduce the coefficient-variance and block-covariance GSA estimates.
+
+Here ``embedded`` adds the ciphertext-offset coordinate. The normalized
+one-odd-block key-recovery model is evaluated separately by affine.py.
+"""
 from math import e, exp, log, pi, sqrt
 from pathlib import Path
 import json
@@ -22,15 +26,15 @@ def block_variances(tables, whiten):
     return variances
 
 
-def estimate(first, second, affine):
+def estimate(first, second, embedded):
     logxi = log(second/first)/2
-    height = log(second)/2 if affine else 0
-    for beta in range(40, 1025+affine):
+    height = log(second)/2 if embedded else 0
+    for beta in range(40, 1025+embedded):
         shape = log(1.01295) if beta == 40 else (
             log(beta/(2*pi*e)) + log(pi*beta)/beta)/(2*(beta-1))
         best = (-float("inf"), None)
         for keep in range(4, 513, 4):
-            dim = 512+keep+affine
+            dim = 512+keep+embedded
             if dim < beta:
                 continue
             det = keep*log(211) + 512*logxi + height
@@ -51,3 +55,4 @@ if __name__ == "__main__":
         beta = min(x[0] for x in rows)
         print("covariance" if whiten else "coefficient variance", "beta/dim:", rows,
               "min classical / quantum log2-cost:", f"{.292*beta:.3f}", f"{.257*beta:.3f}")
+

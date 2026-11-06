@@ -32,7 +32,7 @@ implicit rejection. `results/kem.json` records a successful run.
 ├── ntru/          # Encryption, KEM, polynomial arithmetic, and parameter tables
 ├── examples/      # Runnable encryption example
 ├── experiments/   # Paper reproduction scripts
-├── tests/         # KEM functional tests
+├── tests/         # KEM functional tests and affine-model checks
 ├── results/       # Recorded test results and exported experiment output
 ├── README.md
 └── requirements.txt
@@ -48,6 +48,7 @@ implicit rejection. `results/kem.json` records a successful run.
 | `ntru/par.json` | The four finite block distributions used at q = 211 |
 | `ntru/kem.py` | ACWC0 masking, FO encapsulation and implicit rejection |
 | `tests/test_kem.py` | KEM functional tests |
+| `tests/test_affine.py` | Conditional distribution and normalized-key algebra checks |
 | `examples/demo.py` | Base encryption example |
 | `experiments/` | Reproduction scripts listed below |
 
@@ -65,6 +66,7 @@ relative to the package, independently of the working directory.
 | `python -m experiments.wrap` | Actual internal recovery-error lower bound > 2^-100 for that control |
 | `python -m experiments.balance` | q = 349 full-noise comparison at equal variance; bound exponents 129.291698 and 127.216750 |
 | `python -m experiments.cost` | Coefficient-variance and block-covariance lattice-cost estimates |
+| `python -m experiments.affine --out results/affine.json` | Conditional normalized-key affine estimate: beta 409, classical/quantum leading-sieve exponents 119.428/105.113 |
 
 To export the Gaussian curve:
 
@@ -75,9 +77,32 @@ python -m experiments.gauss --out results/curve.csv
 The finite q = 211 upper/lower bounds use exact integer or rational arithmetic.
 Gaussian curves and lattice-cost estimates are numerical. In the q = 349 comparison,
 the complementary bound uses exact rational arithmetic and the isotropic control
-uses 70-digit decimal arithmetic. An exponent is the negative base-two logarithm
-of the stated bound, not a measured failure probability. The scripts evaluate the
+uses 70-digit decimal arithmetic. A decryption-error-bound exponent is the negative
+base-two logarithm of the stated bound, not a measured failure probability. The scripts evaluate the
 selected parameters; they do not rerun the historical parameter search.
+
+The affine estimate is derived from the `f,g` tables in `ntru/par.json`. It applies
+to accepted keys with exactly one odd-parity `f` block, a subset of probability
+about 0.0955693. Normalizing by the signed monomial in that block preserves the
+public key and gives the relation `gbar = h + (1+y)*h*a`, where `y = x^128` and
+block zero of `a` is known to be zero. The script derives the conditional block
+law, computes its moments and scans the GSA length criterion. It does not run
+BKZ or measure recovery success. If conditional recovery succeeds with probability
+`s_rec`, the contribution to success over generated keys is `0.0955693*s_rec`.
+The reported exponents describe leading sieve work; the quantum row uses the
+paper's quantum-random-access-memory model.
+
+`experiments/cost.py` uses an embedding coordinate for ciphertext recovery.
+That ciphertext embedding is separate from the normalized key-recovery route
+in `experiments/affine.py`. The existing cost results are unchanged. Check the
+conditional law, signed-monomial invariance and affine relation with:
+
+```bash
+python -m tests.test_affine
+```
+
+`results/affine.json` records the parameters, subset probability, conditional law,
+target moments, selected lattice dimension and the threshold at beta 408 and 409.
 
 ## Encryption example
 
@@ -124,3 +149,4 @@ implementation is needed.
 This Python code is a research implementation with data-dependent loops and
 branches. Functional tests check executable behavior; the rare-failure bound
 comes from `experiments/dfr.py`, rather than the number of successful test messages.
+
