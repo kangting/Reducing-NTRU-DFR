@@ -4,8 +4,8 @@ import hashlib
 import hmac
 import secrets
 
-from pke import BasePKE, SecretKey as BaseSecretKey
-import poly
+from .pke import BasePKE, SecretKey as BaseSecretKey
+from . import poly
 
 VERSION = b'Complementary-NTRU-ACWC0-FO-v1'
 PARAMETER_ID = b'n512-q211-P1+x256-block17-v1'

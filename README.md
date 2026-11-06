@@ -13,50 +13,63 @@ Use Python 3.10 or later.
 
 ```bash
 python -m pip install -r requirements.txt
-python demo.py
-python test.py --out results.json
-python exp/dfr.py
+python -m examples.demo
+python -m tests.test_kem --out results/kem.json
+python -m experiments.dfr
 ```
 
-`demo.py` generates three keys and checks 48 encrypt/decrypt round trips. An optional
+`examples/demo.py` generates three keys and checks 48 encrypt/decrypt round trips. An optional
 `--seed 1` makes the demo reproducible; the default uses operating-system randomness.
-`test.py` checks the KEM with three keys, 48 fixed-seed messages, and three additional
+`tests/test_kem.py` checks the KEM with three keys, 48 fixed-seed messages, and three additional
 encapsulations. It checks deterministic re-encryption, changes to both halves of the
 external message, modifications of the core and mask, malformed encodings, and
-implicit rejection. `results.json` records a successful run.
+implicit rejection. `results/kem.json` records a successful run.
+
+## Repository layout
+
+```text
+.
+├── ntru/          # Encryption, KEM, polynomial arithmetic, and parameter tables
+├── examples/      # Runnable encryption example
+├── experiments/   # Paper reproduction scripts
+├── tests/         # KEM functional tests
+├── results/       # Recorded test results and exported experiment output
+├── README.md
+└── requirements.txt
+```
 
 ## Files
 
 | Path | Purpose |
 | --- | --- |
-| `pke.py` | Key generation, base encryption, internal residue recovery |
-| `sample.py` | Exact integer sampling and conditional message lifts |
-| `poly.py` | Polynomial arithmetic and radix-q encoding |
-| `par.json` | The four finite block distributions used at q = 211 |
-| `kem.py` | ACWC0 masking, FO encapsulation and implicit rejection |
-| `test.py` | KEM functional tests |
-| `demo.py` | Base encryption example |
-| `exp/` | Reproduction scripts listed below |
+| `ntru/pke.py` | Key generation, base encryption, internal residue recovery |
+| `ntru/sample.py` | Exact integer sampling and conditional message lifts |
+| `ntru/poly.py` | Polynomial arithmetic and radix-q encoding |
+| `ntru/par.json` | The four finite block distributions used at q = 211 |
+| `ntru/kem.py` | ACWC0 masking, FO encapsulation and implicit rejection |
+| `tests/test_kem.py` | KEM functional tests |
+| `examples/demo.py` | Base encryption example |
+| `experiments/` | Reproduction scripts listed below |
 
 ## Experiments
 
-Run these commands from the repository root. Script paths and parameter loading
-also work when the commands are invoked from another directory.
+Run these module commands from the repository root. Parameter files are resolved
+relative to the package, independently of the working directory.
 
 | Command | Paper result |
 | --- | --- |
-| `python exp/gauss.py` | Gaussian coefficient variance 1280 → 388.536795; numerical tail curves at q = 577 and 1061 |
-| `python exp/dfr.py` | Exact internal average-error upper bound ≤ 2^-129 at q = 211 |
-| `python exp/match.py` | Finite-product magnitude counts for the equal-variance exponential-moment comparison |
-| `python exp/orient.py` | Noise variance 52.722656 → 74.769531 when the alternating sign change is removed |
-| `python exp/wrap.py` | Actual internal recovery-error lower bound > 2^-100 for that control |
-| `python exp/balance.py` | q = 349 full-noise comparison at equal variance; bound exponents 129.291698 and 127.216750 |
-| `python exp/cost.py` | Coefficient-variance and block-covariance lattice-cost estimates |
+| `python -m experiments.gauss` | Gaussian coefficient variance 1280 → 388.536795; numerical tail curves at q = 577 and 1061 |
+| `python -m experiments.dfr` | Exact internal average-error upper bound ≤ 2^-129 at q = 211 |
+| `python -m experiments.match` | Finite-product magnitude counts for the equal-variance exponential-moment comparison |
+| `python -m experiments.orient` | Noise variance 52.722656 → 74.769531 when the alternating sign change is removed |
+| `python -m experiments.wrap` | Actual internal recovery-error lower bound > 2^-100 for that control |
+| `python -m experiments.balance` | q = 349 full-noise comparison at equal variance; bound exponents 129.291698 and 127.216750 |
+| `python -m experiments.cost` | Coefficient-variance and block-covariance lattice-cost estimates |
 
 To export the Gaussian curve:
 
 ```bash
-python exp/gauss.py --out curve.csv
+python -m experiments.gauss --out results/curve.csv
 ```
 
 The finite q = 211 upper/lower bounds use exact integer or rational arithmetic.
@@ -70,7 +83,7 @@ selected parameters; they do not rerun the historical parameter search.
 
 ```python
 import secrets
-from pke import BasePKE
+from ntru.pke import BasePKE
 
 scheme = BasePKE()
 pk, sk = scheme.keygen()
@@ -85,7 +98,7 @@ polynomial ciphertext. The public key also occupies 495 bytes.
 ## KEM example
 
 ```python
-from kem import KEM
+from ntru.kem import KEM
 
 scheme = KEM()
 pk, sk = scheme.keygen()
@@ -102,7 +115,7 @@ secret rejection seed and all received bytes. Malformed public keys raise
 `ValueError`. Base or masked PKE decryption returns `None` for malformed
 ciphertexts, while KEM decapsulation always returns a 32-byte key.
 
-`kem.py` defines the fixed public version and parameter identifier. Change the
+`ntru/kem.py` defines the fixed public version and parameter identifier. Change the
 identifier when changing the parameter tables or encoding conventions. Hash
 inputs use eight-byte little-endian length prefixes and separate `F`, `G`, `H`
 tags. SHAKE256 is provided by Python's standard `hashlib`; no extra hash
@@ -110,4 +123,4 @@ implementation is needed.
 
 This Python code is a research implementation with data-dependent loops and
 branches. Functional tests check executable behavior; the rare-failure bound
-comes from `exp/dfr.py`, rather than the number of successful test messages.
+comes from `experiments/dfr.py`, rather than the number of successful test messages.

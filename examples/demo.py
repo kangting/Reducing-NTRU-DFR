@@ -3,7 +3,7 @@ import argparse
 import random
 import secrets
 
-from pke import BasePKE
+from ntru.pke import BasePKE
 
 
 def run(keys=3, trials=16, seed=None):

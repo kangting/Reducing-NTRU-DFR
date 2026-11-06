@@ -7,8 +7,8 @@ import secrets
 
 import numpy as np
 
-import poly
-from sample import Table
+from . import poly
+from .sample import Table
 
 
 @dataclass

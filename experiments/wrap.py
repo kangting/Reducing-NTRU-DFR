@@ -7,7 +7,7 @@ from collections import Counter
 from fractions import Fraction as F
 from itertools import product
 from math import log2
-from orient import f, g, r, m, mul, convolution, accepted
+from .orient import f, g, r, m, mul, convolution, accepted
 
 
 def project(left, right, factor, v, odd=False, sign=1):

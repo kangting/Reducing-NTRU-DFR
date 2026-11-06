@@ -42,7 +42,7 @@ def estimate(first, second, affine):
 
 
 if __name__ == "__main__":
-    data = json.loads((Path(__file__).resolve().parents[1] / "par.json").read_text())
+    data = json.loads((Path(__file__).resolve().parents[1] / "ntru" / "par.json").read_text())
     assert data["n"] == 512 and data["q"] == 211
     for whiten in (False, True):
         v = block_variances(data["tables"], whiten)

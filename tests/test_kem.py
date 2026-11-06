@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import random
 
-from kem import FixedTape, KEM, frame
+from ntru.kem import FixedTape, KEM, frame
 
 
 def flip(data, index):
