@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "keys": 3,
+  "messages": 48,
+  "public_key_bytes": 495,
+  "ciphertext_bytes": 527,
+  "shared_key_bytes": 32,
+  "base_randomness_bytes": 384,
+  "masked_randomness_bytes": 416,
+  "checks": {
+    "honest": 48,
+    "reencryption": 48,
+    "both_message_halves": 48,
+    "core_mutation": 48,
+    "mask_mutation": 48,
+    "malformed_ciphertexts": 48,
+    "valid_independent_of_fallback": 48,
+    "mask_xor": 3,
+    "maximum_coin_budget": 3,
+    "malformed_public_key": 9,
+    "encapsulations": 3,
+    "tape_exhaustion": 1
+  }
+}

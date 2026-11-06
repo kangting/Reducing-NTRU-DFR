@@ -85,7 +85,7 @@ def run(path):
     print(f'Internal average error <= 2^-129; bound exponent {exponent:.10f}')
     print(f'Public key / base polynomial: {size} / {size} bytes')
     print(f'Paper KEM format with 32-byte mask: {size} / {size+32} bytes; '
-          f'total {2*size+32} bytes (wrapper not implemented here)')
+          f'total {2*size+32} bytes (KEM implementation: kem.py; functional tests: test.py)')
     return bound
 
 

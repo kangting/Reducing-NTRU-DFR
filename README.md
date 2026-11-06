@@ -2,7 +2,7 @@
 
 Minimal code for **Reducing NTRU Decryption Noise with Complementary Gaussian Sampling**.
 
-The package contains the polynomial encryption example and the experiments reported
+The package contains the base encryption, ACWC0/FO KEM, and the experiments reported
 in the paper. The Gaussian experiment evaluates rounded continuous Gaussian laws.
 The encryption example uses the paper's finite 17-pattern block distributions at
 `n = 512`, `q = 211`, and `P = 1 + x^256`.
@@ -14,11 +14,16 @@ Use Python 3.10 or later.
 ```bash
 python -m pip install -r requirements.txt
 python demo.py
+python test.py --out results.json
 python exp/dfr.py
 ```
 
 `demo.py` generates three keys and checks 48 encrypt/decrypt round trips. An optional
 `--seed 1` makes the demo reproducible; the default uses operating-system randomness.
+`test.py` checks the KEM with three keys, 48 fixed-seed messages, and three additional
+encapsulations. It checks deterministic re-encryption, changes to both halves of the
+external message, modifications of the core and mask, malformed encodings, and
+implicit rejection. `results.json` records a successful run.
 
 ## Files
 
@@ -28,7 +33,9 @@ python exp/dfr.py
 | `sample.py` | Exact integer sampling and conditional message lifts |
 | `poly.py` | Polynomial arithmetic and radix-q encoding |
 | `par.json` | The four finite block distributions used at q = 211 |
-| `demo.py` | A short working example |
+| `kem.py` | ACWC0 masking, FO encapsulation and implicit rejection |
+| `test.py` | KEM functional tests |
+| `demo.py` | Base encryption example |
 | `exp/` | Reproduction scripts listed below |
 
 ## Experiments
@@ -72,8 +79,35 @@ c0 = scheme.encrypt(pk, u)
 assert scheme.decrypt(sk, c0) == u
 ```
 
-Here `u` is the 256-bit **internal residue** and `c0` is the base polynomial
-ciphertext. The example transmits a 495-byte public key and a 495-byte base
-ciphertext. The paper's ACWC0/FO KEM additionally uses a 32-byte mask, giving
-495/527 bytes. That wrapper is omitted from this package. This Python code is a
-research implementation; the loops and branches are not constant time.
+Here `u` is the 256-bit **internal residue** and `c0` is the 495-byte base
+polynomial ciphertext. The public key also occupies 495 bytes.
+
+## KEM example
+
+```python
+from kem import KEM
+
+scheme = KEM()
+pk, sk = scheme.keygen()
+ciphertext, key = scheme.encapsulate(pk)
+assert scheme.decapsulate(sk, ciphertext) == key
+assert (len(pk), len(ciphertext), len(key)) == (495, 527, 32)
+```
+
+ACWC0 samples an internal message `u` and appends the 32-byte mask
+`M xor F(ctx,u)` for the external message `M`. FO derives `u` and the base
+randomness from a 416-byte `G(ctx,M)` output. Decapsulation re-encrypts the
+complete 527-byte ciphertext; a failed check derives a fallback key from the
+secret rejection seed and all received bytes. Malformed public keys raise
+`ValueError`. Base or masked PKE decryption returns `None` for malformed
+ciphertexts, while KEM decapsulation always returns a 32-byte key.
+
+`kem.py` defines the fixed public version and parameter identifier. Change the
+identifier when changing the parameter tables or encoding conventions. Hash
+inputs use eight-byte little-endian length prefixes and separate `F`, `G`, `H`
+tags. SHAKE256 is provided by Python's standard `hashlib`; no extra hash
+implementation is needed.
+
+This Python code is a research implementation with data-dependent loops and
+branches. Functional tests check executable behavior; the rare-failure bound
+comes from `exp/dfr.py`, rather than the number of successful test messages.
