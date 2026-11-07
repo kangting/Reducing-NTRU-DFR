@@ -1,0 +1,2381 @@
+{
+  "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+  "selection_source": "upstream/refined_family_20261107/parameters_refined.json",
+  "G28": "excluded by explicit user scope",
+  "ntt_bounds": {
+    "maximum_q": 541,
+    "maximum_n": 1024,
+    "centered_input": 270,
+    "maximum_absolute_convolution": 74649600,
+    "crt_product": 226523137,
+    "crt_unique_lift_verified": true
+  },
+  "profiles": [
+    {
+      "semantic": {
+        "id": "S512_q251_C140_sharp",
+        "n": 512,
+        "q": 251,
+        "mode": "single",
+        "laws": [
+          [
+            "247/512",
+            "5/32",
+            "185/512"
+          ],
+          [
+            "1/2",
+            "71/512",
+            "185/512"
+          ],
+          [
+            "1/2",
+            "113/512",
+            "143/512"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "main_recommendations/0",
+        "single_alternatives/1"
+      ],
+      "primary": true,
+      "cdfs": [
+        [
+          1976,
+          2056,
+          2136,
+          2216,
+          2296,
+          2376,
+          2456,
+          2536,
+          2616,
+          2801,
+          2986,
+          3171,
+          3356,
+          3541,
+          3726,
+          3911,
+          4096
+        ],
+        [
+          2048,
+          2119,
+          2190,
+          2261,
+          2332,
+          2403,
+          2474,
+          2545,
+          2616,
+          2801,
+          2986,
+          3171,
+          3356,
+          3541,
+          3726,
+          3911,
+          4096
+        ],
+        [
+          2048,
+          2161,
+          2274,
+          2387,
+          2500,
+          2613,
+          2726,
+          2839,
+          2952,
+          3095,
+          3238,
+          3381,
+          3524,
+          3667,
+          3810,
+          3953,
+          4096
+        ]
+      ],
+      "masks": [
+        4095,
+        4095,
+        4095
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 511,
+      "ct_bytes": 543,
+      "wire_contract_sha256": "7b0848f3622d48e9a72164cae7a6484c76c7864c979bf7b1c26b51462a299ac9",
+      "parameter_id": "family20261107/7b0848f3622d48e9a72164cae7a6484c76c7864c979bf7b1c26b51462a299ac9",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000006ffddbe31b59b1ec99c646bd00968bcb27cd87dfe7089b3dfc5fa23b95aff53d646d308f50722a7568e68f05c2d35a43a9f33bd2b3c9601",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 140.05457838937312,
+        "Q": 134.56191609441757,
+        "b": 166.15402663034274,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 1,
+      "macro": "CNTRU_PROFILE_S512_Q251_C140_SHARP",
+      "symbol_prefix": "cntru_family_p01_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_q347_den128_sharp",
+        "n": 1024,
+        "q": 347,
+        "mode": "single",
+        "laws": [
+          [
+            "63/128",
+            "5/64",
+            "55/128"
+          ],
+          [
+            "1/2",
+            "9/128",
+            "55/128"
+          ],
+          [
+            "1/2",
+            "21/128",
+            "43/128"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "main_recommendations/1",
+        "single_alternatives/4"
+      ],
+      "primary": true,
+      "cdfs": [
+        [
+          504,
+          514,
+          524,
+          534,
+          544,
+          554,
+          564,
+          574,
+          584,
+          639,
+          694,
+          749,
+          804,
+          859,
+          914,
+          969,
+          1024
+        ],
+        [
+          512,
+          521,
+          530,
+          539,
+          548,
+          557,
+          566,
+          575,
+          584,
+          639,
+          694,
+          749,
+          804,
+          859,
+          914,
+          969,
+          1024
+        ],
+        [
+          512,
+          533,
+          554,
+          575,
+          596,
+          617,
+          638,
+          659,
+          680,
+          723,
+          766,
+          809,
+          852,
+          895,
+          938,
+          981,
+          1024
+        ]
+      ],
+      "masks": [
+        1023,
+        1023,
+        1023
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1081,
+      "ct_bytes": 1113,
+      "wire_contract_sha256": "9c4047ac8b76efd72b9608415c22d473a63242ca979b96f24e7c9b9c086cb682",
+      "parameter_id": "family20261107/9c4047ac8b76efd72b9608415c22d473a63242ca979b96f24e7c9b9c086cb682",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x10000000000000002616184efb0ab6a3a4bb9573a344575af4059444789547ff685087bca8a144d32556b2251613171aa4cf05d8a005015d9b8408ba5f7c89595e76d925173cf80e552a856b1ce217c1f33940f8241e6adcf76b672c4935a40f4bb36410ee24654beb36bec9c39dc1d087b4a85208996664b17d12328a2a6bb9d6e80dc0bc224eef03128625977a1e2c1d189336e303567d7442488538f42dc01",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 270.06805409241394,
+        "Q": 251.59212663033924,
+        "b": 163.38335472647213,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 2,
+      "macro": "CNTRU_PROFILE_S1024_Q347_DEN128_SHARP",
+      "symbol_prefix": "cntru_family_p02_"
+    },
+    {
+      "semantic": {
+        "id": "D512_M128_W_experimental_correction_on_q157",
+        "n": 512,
+        "q": 157,
+        "mode": "double",
+        "laws": [
+          [
+            "1/2",
+            "5/256",
+            "123/256"
+          ],
+          [
+            "1/2",
+            "15/64",
+            "17/64"
+          ],
+          [
+            "1/2",
+            "15/64",
+            "17/64"
+          ],
+          [
+            "1/2",
+            "0",
+            "1/2"
+          ]
+        ],
+        "external_message_bits": 128,
+        "internal_residue_bits": 128,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "W-adjacent-repeat-correct-first-max-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 259,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 16,
+          "decoder": "full syndrome; first absolute argmax; inverse over n/2 bits; equal halves"
+        }
+      },
+      "source_records": [
+        "main_recommendations/2",
+        "double_alternatives/0"
+      ],
+      "primary": true,
+      "cdfs": [
+        [
+          1024,
+          1029,
+          1034,
+          1039,
+          1044,
+          1049,
+          1054,
+          1059,
+          1064,
+          1187,
+          1310,
+          1433,
+          1556,
+          1679,
+          1802,
+          1925,
+          2048
+        ],
+        [
+          256,
+          271,
+          286,
+          301,
+          316,
+          331,
+          346,
+          361,
+          376,
+          393,
+          410,
+          427,
+          444,
+          461,
+          478,
+          495,
+          512
+        ],
+        [
+          256,
+          271,
+          286,
+          301,
+          316,
+          331,
+          346,
+          361,
+          376,
+          393,
+          410,
+          427,
+          444,
+          461,
+          478,
+          495,
+          512
+        ]
+      ],
+      "masks": [
+        2047,
+        511,
+        511
+      ],
+      "word_bytes": 2,
+      "f_trials": 259,
+      "pk_bytes": 467,
+      "ct_bytes": 483,
+      "wire_contract_sha256": "ad64dafc62417d173e4dbc18d51405c670d46340ef4f21a738a08ab99181ddc5",
+      "parameter_id": "family20261107/ad64dafc62417d173e4dbc18d51405c670d46340ef4f21a738a08ab99181ddc5",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1018f722d42aa7c5d7c2bac015a2645fdb9596787f2dc93e3b52fe8156628f86289a77a4d34aa8c0f75c6774440bb64ab80f5728a3c66468fb72606f11256c46a6f11b50ddd9a8fd0ef76d49bd8b9f9993e5f1343d45c9cb0a0ed6c12b2018cc65e7036abab1bfea7a72eb2958751fe01",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 144.38567105015628,
+        "Q": 138.44636443585333,
+        "b": 133.37905551627864,
+        "status": "W-code base-PKE prototype; full KEM proof remains separate"
+      },
+      "number": 3,
+      "macro": "CNTRU_PROFILE_D512_M128_W_EXPERIMENTAL_CORRECTION_ON_Q157",
+      "symbol_prefix": "cntru_family_p03_"
+    },
+    {
+      "semantic": {
+        "id": "D1024_M256_W_experimental_correction_on_q251",
+        "n": 1024,
+        "q": 251,
+        "mode": "double",
+        "laws": [
+          [
+            "1/2",
+            "3/256",
+            "125/256"
+          ],
+          [
+            "1/2",
+            "17/256",
+            "111/256"
+          ],
+          [
+            "1/2",
+            "17/256",
+            "111/256"
+          ],
+          [
+            "1/2",
+            "0",
+            "1/2"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "W-adjacent-repeat-correct-first-max-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "full syndrome; first absolute argmax; inverse over n/2 bits; equal halves"
+        }
+      },
+      "source_records": [
+        "main_recommendations/3",
+        "double_alternatives/2"
+      ],
+      "primary": true,
+      "cdfs": [
+        [
+          1024,
+          1027,
+          1030,
+          1033,
+          1036,
+          1039,
+          1042,
+          1045,
+          1048,
+          1173,
+          1298,
+          1423,
+          1548,
+          1673,
+          1798,
+          1923,
+          2048
+        ],
+        [
+          1024,
+          1041,
+          1058,
+          1075,
+          1092,
+          1109,
+          1126,
+          1143,
+          1160,
+          1271,
+          1382,
+          1493,
+          1604,
+          1715,
+          1826,
+          1937,
+          2048
+        ],
+        [
+          1024,
+          1041,
+          1058,
+          1075,
+          1092,
+          1109,
+          1126,
+          1143,
+          1160,
+          1271,
+          1382,
+          1493,
+          1604,
+          1715,
+          1826,
+          1937,
+          2048
+        ]
+      ],
+      "masks": [
+        2047,
+        2047,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1021,
+      "ct_bytes": 1053,
+      "wire_contract_sha256": "fa01bc1f9c193739e81e9cff93698d6f6a39163f188d4fa1d71088c2033c7966",
+      "parameter_id": "family20261107/fa01bc1f9c193739e81e9cff93698d6f6a39163f188d4fa1d71088c2033c7966",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x100973f9ca8cd00a68c6c8d3fca02ca6de6b0d7ba426777344d7ced4bde6b367155790955debadbbb834d963d164f347476fef8bcb0c43b216f8a2c7dc42b346b54ccec040ff24f6fa522c4f7ef1410dd3f150b6e3177669a57104362749594d76c1e29bad03661bb93909c541485f9df5edf1c46e9de83ee7fed8a55fcd28d3a4451c6eee349bfe21c0327448f28e71acc27030764597e3be35d8a93d1493ca632b304b89e54d4631b59b9a31371f8ae86d9582669e1b7e9cd00c670f4bf365f74269c7ab31728167a4ce4de1f6387f2cca2ba7a9eb710db8c448edcecbb7401",
+        "f_reject_denominator_hex": "0x20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 278.67978514065004,
+        "Q": 259.33139265676186,
+        "b": 166.86190608525794,
+        "status": "W-code base-PKE prototype; full KEM proof remains separate"
+      },
+      "number": 4,
+      "macro": "CNTRU_PROFILE_D1024_M256_W_EXPERIMENTAL_CORRECTION_ON_Q251",
+      "symbol_prefix": "cntru_family_p04_"
+    },
+    {
+      "semantic": {
+        "id": "S512_q251_C1395_sharp",
+        "n": 512,
+        "q": 251,
+        "mode": "single",
+        "laws": [
+          [
+            "1/2",
+            "39/256",
+            "89/256"
+          ],
+          [
+            "1/2",
+            "39/256",
+            "89/256"
+          ],
+          [
+            "1/2",
+            "15/64",
+            "17/64"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "single_alternatives/0"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          1024,
+          1063,
+          1102,
+          1141,
+          1180,
+          1219,
+          1258,
+          1297,
+          1336,
+          1425,
+          1514,
+          1603,
+          1692,
+          1781,
+          1870,
+          1959,
+          2048
+        ],
+        [
+          1024,
+          1063,
+          1102,
+          1141,
+          1180,
+          1219,
+          1258,
+          1297,
+          1336,
+          1425,
+          1514,
+          1603,
+          1692,
+          1781,
+          1870,
+          1959,
+          2048
+        ],
+        [
+          256,
+          271,
+          286,
+          301,
+          316,
+          331,
+          346,
+          361,
+          376,
+          393,
+          410,
+          427,
+          444,
+          461,
+          478,
+          495,
+          512
+        ]
+      ],
+      "masks": [
+        2047,
+        2047,
+        511
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 511,
+      "ct_bytes": 543,
+      "wire_contract_sha256": "70579a9f05535107db08e18c823e4095d3fe9675e7e4aac32bad9296805363d3",
+      "parameter_id": "family20261107/70579a9f05535107db08e18c823e4095d3fe9675e7e4aac32bad9296805363d3",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x100000000000000001dbb0bf6df5e8f136a1ed3813834e132f19da13bdfb1b39a92cac26f723d364234b46ec1b6d430eba040cf10570c1384c72245c89d70018f56ec5597fd41ec0cfc72254602f1e1b30b7c4d664e0a1e227f32eb218d9822910bf804010cb9b5b7dcd198097cef9c01",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 139.53736771935266,
+        "Q": 134.10052177590683,
+        "b": 169.65906753496756,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 5,
+      "macro": "CNTRU_PROFILE_S512_Q251_C1395_SHARP",
+      "symbol_prefix": "cntru_family_p05_"
+    },
+    {
+      "semantic": {
+        "id": "S512_q251_C140_simple_sharp",
+        "n": 512,
+        "q": 251,
+        "mode": "single",
+        "laws": [
+          [
+            "63/128",
+            "9/64",
+            "47/128"
+          ],
+          [
+            "1/2",
+            "17/128",
+            "47/128"
+          ],
+          [
+            "1/2",
+            "7/32",
+            "9/32"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "single_alternatives/2"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          504,
+          522,
+          540,
+          558,
+          576,
+          594,
+          612,
+          630,
+          648,
+          695,
+          742,
+          789,
+          836,
+          883,
+          930,
+          977,
+          1024
+        ],
+        [
+          512,
+          529,
+          546,
+          563,
+          580,
+          597,
+          614,
+          631,
+          648,
+          695,
+          742,
+          789,
+          836,
+          883,
+          930,
+          977,
+          1024
+        ],
+        [
+          128,
+          135,
+          142,
+          149,
+          156,
+          163,
+          170,
+          177,
+          184,
+          193,
+          202,
+          211,
+          220,
+          229,
+          238,
+          247,
+          256
+        ]
+      ],
+      "masks": [
+        1023,
+        1023,
+        255
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 511,
+      "ct_bytes": 543,
+      "wire_contract_sha256": "36a8382853d23c0248ed5bf15bc4443e699c1e4c2b99cfa530e0b7292b372f8d",
+      "parameter_id": "family20261107/36a8382853d23c0248ed5bf15bc4443e699c1e4c2b99cfa530e0b7292b372f8d",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000816bd5181a184662a621db3f8dc2582c0b4250059ca8b1af27e11f097d371e3d4a3d942ab0b07ee812d0f228e8dc72595b4972290a9e94b8e1d5a1472c42e4e76000838e3ca1c6401",
+        "f_reject_denominator_hex": "0x20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 140.06992635370656,
+        "Q": 134.577264058751,
+        "b": 166.015991895752,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 6,
+      "macro": "CNTRU_PROFILE_S512_Q251_C140_SIMPLE_SHARP",
+      "symbol_prefix": "cntru_family_p06_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_q349_refined",
+        "n": 1024,
+        "q": 349,
+        "mode": "single",
+        "laws": [
+          [
+            "125/256",
+            "21/256",
+            "55/128"
+          ],
+          [
+            "1/2",
+            "9/128",
+            "55/128"
+          ],
+          [
+            "1/2",
+            "21/128",
+            "43/128"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "single_alternatives/3"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          1000,
+          1021,
+          1042,
+          1063,
+          1084,
+          1105,
+          1126,
+          1147,
+          1168,
+          1278,
+          1388,
+          1498,
+          1608,
+          1718,
+          1828,
+          1938,
+          2048
+        ],
+        [
+          512,
+          521,
+          530,
+          539,
+          548,
+          557,
+          566,
+          575,
+          584,
+          639,
+          694,
+          749,
+          804,
+          859,
+          914,
+          969,
+          1024
+        ],
+        [
+          512,
+          533,
+          554,
+          575,
+          596,
+          617,
+          638,
+          659,
+          680,
+          723,
+          766,
+          809,
+          852,
+          895,
+          938,
+          981,
+          1024
+        ]
+      ],
+      "masks": [
+        2047,
+        1023,
+        1023
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1082,
+      "ct_bytes": 1114,
+      "wire_contract_sha256": "942a9b2d316ea73217ede90b2110fa64385eb392446f6d69bda27d08336a2f1e",
+      "parameter_id": "family20261107/942a9b2d316ea73217ede90b2110fa64385eb392446f6d69bda27d08336a2f1e",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x100000000000000003851a6ac799bf2267bd4a150c60b62703585235202718ddec9e97424321b3abcc9cd0f23986f0c0afe72142a245d0f9c055a8fcd8090ffdb17fc7a92e389a469356cd3ae9939c4c4631b447b17d1ef92f21defabe04efb5986ae2e3e68d429f86829e523419310e328638354bcb335a1df147f75004c4e54704a8034175e6444c50a09ba454d4b9faabf53673483386c5fd9989c5000df66571b2c5de8836b28f7df729695ca3432458b265eda5fdf77e5b07c0be217eb3e86c5e7bec8d64c30b0964b1df8d8aff6685025e7011a14b56bbc8aa213984c01",
+        "f_reject_denominator_hex": "0x20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 270.02466149690053,
+        "Q": 251.54873403482586,
+        "b": 164.87072218005778,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 7,
+      "macro": "CNTRU_PROFILE_S1024_Q349_REFINED",
+      "symbol_prefix": "cntru_family_p07_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_q347_den256_sharp",
+        "n": 1024,
+        "q": 347,
+        "mode": "single",
+        "laws": [
+          [
+            "125/256",
+            "11/128",
+            "109/256"
+          ],
+          [
+            "1/2",
+            "19/256",
+            "109/256"
+          ],
+          [
+            "1/2",
+            "43/256",
+            "85/256"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "single_alternatives/5"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          1000,
+          1022,
+          1044,
+          1066,
+          1088,
+          1110,
+          1132,
+          1154,
+          1176,
+          1285,
+          1394,
+          1503,
+          1612,
+          1721,
+          1830,
+          1939,
+          2048
+        ],
+        [
+          1024,
+          1043,
+          1062,
+          1081,
+          1100,
+          1119,
+          1138,
+          1157,
+          1176,
+          1285,
+          1394,
+          1503,
+          1612,
+          1721,
+          1830,
+          1939,
+          2048
+        ],
+        [
+          1024,
+          1067,
+          1110,
+          1153,
+          1196,
+          1239,
+          1282,
+          1325,
+          1368,
+          1453,
+          1538,
+          1623,
+          1708,
+          1793,
+          1878,
+          1963,
+          2048
+        ]
+      ],
+      "masks": [
+        2047,
+        2047,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1081,
+      "ct_bytes": 1113,
+      "wire_contract_sha256": "54003649c22d3afd8cb28ecc5863568d5c66455f5a185d9f2d574d2a228d6cb3",
+      "parameter_id": "family20261107/54003649c22d3afd8cb28ecc5863568d5c66455f5a185d9f2d574d2a228d6cb3",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000005170377d5a725f1efbf5a158599b1cdb402e6b77db5464ef00fce0f26fc9d61fe1a9844999ed3a3d6e876cd686da845452365af00639f72d9157ed5f69e9a06febe340d7fe1741296a51259a9cd5030fd1720979a94c17916f5e1b66d48c839d44d616da0dea5809630c5d407e69ca73c99f909e4753c6fdda56bbcf55d86948a4d2b2a3c429946456d440e4e97169611fb69a939ed7cf8e03950f45cdd93eace5c8828f14470532aaa975e3a557d8355f9e799502c6c01",
+        "f_reject_denominator_hex": "0x2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 270.0158241336414,
+        "Q": 251.53989667156668,
+        "b": 163.66196448965275,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 8,
+      "macro": "CNTRU_PROFILE_S1024_Q347_DEN256_SHARP",
+      "symbol_prefix": "cntru_family_p08_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_q347_den512_sharp",
+        "n": 1024,
+        "q": 347,
+        "mode": "single",
+        "laws": [
+          [
+            "249/512",
+            "23/256",
+            "217/512"
+          ],
+          [
+            "1/2",
+            "39/512",
+            "217/512"
+          ],
+          [
+            "1/2",
+            "43/256",
+            "85/256"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "single_alternatives/6"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          1992,
+          2038,
+          2084,
+          2130,
+          2176,
+          2222,
+          2268,
+          2314,
+          2360,
+          2577,
+          2794,
+          3011,
+          3228,
+          3445,
+          3662,
+          3879,
+          4096
+        ],
+        [
+          2048,
+          2087,
+          2126,
+          2165,
+          2204,
+          2243,
+          2282,
+          2321,
+          2360,
+          2577,
+          2794,
+          3011,
+          3228,
+          3445,
+          3662,
+          3879,
+          4096
+        ],
+        [
+          1024,
+          1067,
+          1110,
+          1153,
+          1196,
+          1239,
+          1282,
+          1325,
+          1368,
+          1453,
+          1538,
+          1623,
+          1708,
+          1793,
+          1878,
+          1963,
+          2048
+        ]
+      ],
+      "masks": [
+        4095,
+        4095,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1081,
+      "ct_bytes": 1113,
+      "wire_contract_sha256": "40427420dc8c9943bf42a7e34ab4fde90e8d44cc54552de955c6281c1d95c91b",
+      "parameter_id": "family20261107/40427420dc8c9943bf42a7e34ab4fde90e8d44cc54552de955c6281c1d95c91b",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000000731bd0ea1f20237a560115f1efa4c8aefbbef091f2f757e62bf222e9b7573061e29b1959b1a9c2501acdf3b66cebe5dedb40edadf62a6b29f7cd0a50993a43da81b36ee75415aa89903c3945e3371bc6e3ddb824101b7b02f10f38bd512adc82e525f41f4b14e0aa01692422805143070c18e0c9a7b05940b7b93bccc86f20f7f3fa37e1b46f4eed9188bc6ee3660b70d0a699a6c19ae7222d24ac7ac1f0c5fa61bbef770dfc919ebece17ad4e0e85cf5fb03374bb5e023bcc440f24277c4e0212d5da6241b06e9f3a9e604becc2c88c8f87e965554801",
+        "f_reject_denominator_hex": "0x20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 270.0158241336414,
+        "Q": 251.53989667156668,
+        "b": 163.70188365181275,
+        "status": "single-base ACWC0 research parameter profile"
+      },
+      "number": 9,
+      "macro": "CNTRU_PROFILE_S1024_Q347_DEN512_SHARP",
+      "symbol_prefix": "cntru_family_p09_"
+    },
+    {
+      "semantic": {
+        "id": "D1024_M256_W_experimental_correction_on_q269",
+        "n": 1024,
+        "q": 269,
+        "mode": "double",
+        "laws": [
+          [
+            "1/2",
+            "3/256",
+            "125/256"
+          ],
+          [
+            "1/2",
+            "17/256",
+            "111/256"
+          ],
+          [
+            "1/2",
+            "17/256",
+            "111/256"
+          ],
+          [
+            "1/2",
+            "0",
+            "1/2"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "W-adjacent-repeat-correct-first-max-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "full syndrome; first absolute argmax; inverse over n/2 bits; equal halves"
+        }
+      },
+      "source_records": [
+        "double_alternatives/1"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          1024,
+          1027,
+          1030,
+          1033,
+          1036,
+          1039,
+          1042,
+          1045,
+          1048,
+          1173,
+          1298,
+          1423,
+          1548,
+          1673,
+          1798,
+          1923,
+          2048
+        ],
+        [
+          1024,
+          1041,
+          1058,
+          1075,
+          1092,
+          1109,
+          1126,
+          1143,
+          1160,
+          1271,
+          1382,
+          1493,
+          1604,
+          1715,
+          1826,
+          1937,
+          2048
+        ],
+        [
+          1024,
+          1041,
+          1058,
+          1075,
+          1092,
+          1109,
+          1126,
+          1143,
+          1160,
+          1271,
+          1382,
+          1493,
+          1604,
+          1715,
+          1826,
+          1937,
+          2048
+        ]
+      ],
+      "masks": [
+        2047,
+        2047,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1034,
+      "ct_bytes": 1066,
+      "wire_contract_sha256": "fdaf58caa29549c8d4253b8cab70feeec17ac59aec476ef33e38410fb2932d9d",
+      "parameter_id": "family20261107/fdaf58caa29549c8d4253b8cab70feeec17ac59aec476ef33e38410fb2932d9d",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x100973f9ca8cd00a68c6c8d3fca02ca6de6b0d7ba426777344d7ced4bde6b367155790955debadbbb834d963d164f347476fef8bcb0c43b216f8a2c7dc42b346b54ccec040ff24f6fa522c4f7ef1410dd3f150b6e3177669a57104362749594d76c1e29bad03661bb93909c541485f9df5edf1c46e9de83ee7fed8a55fcd28d3a4451c6eee349bfe21c0327448f28e71acc27030764597e3be35d8a93d1493ca632b304b89e54d4631b59b9a31371f8ae86d9582669e1b7e9cd00c670f4bf365f74269c7ab31728167a4ce4de1f6387f2cca2ba7a9eb710db8c448edcecbb7401",
+        "f_reject_denominator_hex": "0x20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 276.7615739888102,
+        "Q": 257.6102157874435,
+        "b": 177.89121069630892,
+        "status": "W-code base-PKE prototype; full KEM proof remains separate"
+      },
+      "number": 10,
+      "macro": "CNTRU_PROFILE_D1024_M256_W_EXPERIMENTAL_CORRECTION_ON_Q269",
+      "symbol_prefix": "cntru_family_p10_"
+    },
+    {
+      "semantic": {
+        "id": "S512_M128_BAT_C144",
+        "n": 512,
+        "q": 269,
+        "mode": "single",
+        "laws": [
+          [
+            "23/128",
+            "65/128",
+            "5/16"
+          ],
+          [
+            "1/2",
+            "1/256",
+            "127/256"
+          ],
+          [
+            "119/256",
+            "3/256",
+            "67/128"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 128,
+        "internal_residue_bits": 256,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 16,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "bat_target_profiles/0"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          184,
+          249,
+          314,
+          379,
+          444,
+          509,
+          574,
+          639,
+          704,
+          744,
+          784,
+          824,
+          864,
+          904,
+          944,
+          984,
+          1024
+        ],
+        [
+          1024,
+          1025,
+          1026,
+          1027,
+          1028,
+          1029,
+          1030,
+          1031,
+          1032,
+          1159,
+          1286,
+          1413,
+          1540,
+          1667,
+          1794,
+          1921,
+          2048
+        ],
+        [
+          952,
+          955,
+          958,
+          961,
+          964,
+          967,
+          970,
+          973,
+          976,
+          1110,
+          1244,
+          1378,
+          1512,
+          1646,
+          1780,
+          1914,
+          2048
+        ]
+      ],
+      "masks": [
+        1023,
+        2047,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 517,
+      "ct_bytes": 533,
+      "wire_contract_sha256": "ac0fd26fdb0f35a31fd018df0d3842dc9b6ac346a1c7f1f1da0679303b88c66e",
+      "parameter_id": "family20261107/ac0fd26fdb0f35a31fd018df0d3842dc9b6ac346a1c7f1f1da0679303b88c66e",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "f_reject_denominator_hex": "0x2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 144.01022459387121,
+        "Q": 138.12675939681836,
+        "b": 149.1959188293922
+      },
+      "number": 11,
+      "macro": "CNTRU_PROFILE_S512_M128_BAT_C144",
+      "symbol_prefix": "cntru_family_p11_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_M256_BAT_C272",
+        "n": 1024,
+        "q": 373,
+        "mode": "single",
+        "laws": [
+          [
+            "47/128",
+            "3/16",
+            "57/128"
+          ],
+          [
+            "1/2",
+            "1/32",
+            "15/32"
+          ],
+          [
+            "1/2",
+            "1/16",
+            "7/16"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "bat_target_profiles/1"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          376,
+          400,
+          424,
+          448,
+          472,
+          496,
+          520,
+          544,
+          568,
+          625,
+          682,
+          739,
+          796,
+          853,
+          910,
+          967,
+          1024
+        ],
+        [
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          151,
+          166,
+          181,
+          196,
+          211,
+          226,
+          241,
+          256
+        ],
+        [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          79,
+          86,
+          93,
+          100,
+          107,
+          114,
+          121,
+          128
+        ]
+      ],
+      "masks": [
+        1023,
+        255,
+        127
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1094,
+      "ct_bytes": 1126,
+      "wire_contract_sha256": "14b655fd9108f789d5fde62c362e1ac464cd399cf02f1d9cc882fa513e1b53bd",
+      "parameter_id": "family20261107/14b655fd9108f789d5fde62c362e1ac464cd399cf02f1d9cc882fa513e1b53bd",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x10000000000000000000000000000000000000000000553f75fdcefcef46eeddc80dcc7f755bc28f265f9ef17cc5573c063ff540e3c42d35a1d153624adc666b026b2716ed595d80fcf4a6e706bde50c612152f87d8d99f72bed3875b982e7c01",
+        "f_reject_denominator_hex": "0x2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {
+        "C": 272.0212667114249,
+        "Q": 253.34835728177922,
+        "b": 170.66161184069642
+      },
+      "number": 12,
+      "macro": "CNTRU_PROFILE_S1024_M256_BAT_C272",
+      "symbol_prefix": "cntru_family_p12_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_M256_D256_simple",
+        "n": 1024,
+        "q": 379,
+        "mode": "single",
+        "laws": [
+          [
+            "1/2",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/2",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/2",
+            "3/8",
+            "1/8"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "strong_dfr_profiles/0"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        [
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        [
+          32,
+          35,
+          38,
+          41,
+          44,
+          47,
+          50,
+          53,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      ],
+      "masks": [
+        63,
+        63,
+        63
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1097,
+      "ct_bytes": 1129,
+      "wire_contract_sha256": "e3ab9fd872e68e997a35a0a8c2aa1725d378145782987d3b9445a012b2964cbd",
+      "parameter_id": "family20261107/e3ab9fd872e68e997a35a0a8c2aa1725d378145782987d3b9445a012b2964cbd",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {},
+      "number": 13,
+      "macro": "CNTRU_PROFILE_S1024_M256_D256_SIMPLE",
+      "symbol_prefix": "cntru_family_p13_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_M256_D256_347",
+        "n": 1024,
+        "q": 347,
+        "mode": "single",
+        "laws": [
+          [
+            "1/2",
+            "251/512",
+            "5/512"
+          ],
+          [
+            "1/2",
+            "251/512",
+            "5/512"
+          ],
+          [
+            "1/2",
+            "503/1024",
+            "9/1024"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "strong_dfr_profiles/1"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          2048,
+          2299,
+          2550,
+          2801,
+          3052,
+          3303,
+          3554,
+          3805,
+          4056,
+          4061,
+          4066,
+          4071,
+          4076,
+          4081,
+          4086,
+          4091,
+          4096
+        ],
+        [
+          2048,
+          2299,
+          2550,
+          2801,
+          3052,
+          3303,
+          3554,
+          3805,
+          4056,
+          4061,
+          4066,
+          4071,
+          4076,
+          4081,
+          4086,
+          4091,
+          4096
+        ],
+        [
+          4096,
+          4599,
+          5102,
+          5605,
+          6108,
+          6611,
+          7114,
+          7617,
+          8120,
+          8129,
+          8138,
+          8147,
+          8156,
+          8165,
+          8174,
+          8183,
+          8192
+        ]
+      ],
+      "masks": [
+        4095,
+        4095,
+        8191
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1081,
+      "ct_bytes": 1113,
+      "wire_contract_sha256": "a948c36da0e9446d0a6b9e944f481d634627780455034c792149310d178c5d34",
+      "parameter_id": "family20261107/a948c36da0e9446d0a6b9e944f481d634627780455034c792149310d178c5d34",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000553f75fdcefcef46eeddc80dcc7f755bc28f265f9ef17cc5573c063ff540e3c42d35a1d153624adc666b026b2716ed595d80fcf4a6e706bde50c612152f87d8d99f72bed3875b982e7c01",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {},
+      "number": 14,
+      "macro": "CNTRU_PROFILE_S1024_M256_D256_347",
+      "symbol_prefix": "cntru_family_p14_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_M256_D256_541",
+        "n": 1024,
+        "q": 541,
+        "mode": "single",
+        "laws": [
+          [
+            "8293/65536",
+            "38187/65536",
+            "1191/4096"
+          ],
+          [
+            "13227/32768",
+            "3/65536",
+            "39079/65536"
+          ],
+          [
+            "355/1024",
+            "5/65536",
+            "42811/65536"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 4,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "strong_dfr_profiles/2"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          66344,
+          104531,
+          142718,
+          180905,
+          219092,
+          257279,
+          295466,
+          333653,
+          371840,
+          390896,
+          409952,
+          429008,
+          448064,
+          467120,
+          486176,
+          505232,
+          524288
+        ],
+        [
+          211632,
+          211635,
+          211638,
+          211641,
+          211644,
+          211647,
+          211650,
+          211653,
+          211656,
+          250735,
+          289814,
+          328893,
+          367972,
+          407051,
+          446130,
+          485209,
+          524288
+        ],
+        [
+          181760,
+          181765,
+          181770,
+          181775,
+          181780,
+          181785,
+          181790,
+          181795,
+          181800,
+          224611,
+          267422,
+          310233,
+          353044,
+          395855,
+          438666,
+          481477,
+          524288
+        ]
+      ],
+      "masks": [
+        524287,
+        524287,
+        524287
+      ],
+      "word_bytes": 4,
+      "f_trials": 257,
+      "pk_bytes": 1163,
+      "ct_bytes": 1195,
+      "wire_contract_sha256": "0608f299833cd98525700aa491c1bbe055273b773831b34221c7d521f052694a",
+      "parameter_id": "family20261107/0608f299833cd98525700aa491c1bbe055273b773831b34221c7d521f052694a",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a61078e26686225e69edd9b83e4b0d2d1f0b3bcdde7e77c6eeae7a688381e755bfb09bb1d229d1154c15ec0ca9d38ceacd69cf8d2571057f3ada3c8caec761295d955a5886088f18dc25f00f0545ffd79a0d96195463ee90279c7535ecf25370b5e05d5873ebb2d1b3b4bb6bf05b2af6f2aa261c200029a51767fd3d83b78d78650b54ec80bb6b3fb6b12e9c48fa079692c795158c7487b108520e7f30ea7ed08f4bf4355c5f4d17f47ef6873a7a09d305e1006f3be281103a54f1613b333ef18aafd8cc1f27169b4cac6b6171e1c5a65afcc514f022dd79b04f61226fbbc14cf6257f5433de166c61bcea1774abb2bc8700c51f98a818b89d91657a60894ace01df06a0fdb9f7349e4b5f90763a827c1ae6d94ab0fa455158fa542de4b7546f1eaa6f7f9cb1ddfa85facc89187ae51f2d2e62d276ac2b44c9c98963ac119cf8937275127a696a69499409898550309db03749d6762ae3699ccdb982250164afbd1870760dfda8e200ef5a859c99b691725098bb27d8ba5e8698494cbce75191a0f31e69c90a67a42cfb7e8c01",
+        "f_reject_denominator_hex": "0x2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {},
+      "number": 15,
+      "macro": "CNTRU_PROFILE_S1024_M256_D256_541",
+      "symbol_prefix": "cntru_family_p15_"
+    },
+    {
+      "semantic": {
+        "id": "S1024_M256_D256_C198_7",
+        "n": 1024,
+        "q": 347,
+        "mode": "single",
+        "laws": [
+          [
+            "1/2",
+            "249/512",
+            "7/512"
+          ],
+          [
+            "1/2",
+            "249/512",
+            "7/512"
+          ],
+          [
+            "1/2",
+            "125/256",
+            "3/256"
+          ],
+          [
+            "1/4",
+            "1/2",
+            "1/4"
+          ]
+        ],
+        "external_message_bits": 256,
+        "internal_residue_bits": 512,
+        "shared_key_bits": 256,
+        "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+        "polynomial": "x^n+1",
+        "P": "1+x^(n/2)",
+        "orientation": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "message_encoding": "P-conditional-17-atom-v1",
+        "byte_sampling": {
+          "atom_order": "zero;8 negacyclic monomial rotations;8 adjacent rotations",
+          "coefficient_word_bytes": 2,
+          "coefficient_word_endian": "little",
+          "message_coins": "one fixed byte per public block; zero classes consume an unused byte",
+          "f_trials": 257,
+          "g_trials": 2
+        },
+        "fo": {
+          "context": "length-prefixed tag/version/parameter-id/pk",
+          "G": "message -> u || r/m coins",
+          "F": "u -> external-message mask",
+          "H": "actual received ciphertext || selected external message or rejection seed",
+          "rejection_seed_bytes": 32,
+          "decoder": "P-residue; inverse over n/2 bits"
+        }
+      },
+      "source_records": [
+        "strong_dfr_profiles/3"
+      ],
+      "primary": false,
+      "cdfs": [
+        [
+          2048,
+          2297,
+          2546,
+          2795,
+          3044,
+          3293,
+          3542,
+          3791,
+          4040,
+          4047,
+          4054,
+          4061,
+          4068,
+          4075,
+          4082,
+          4089,
+          4096
+        ],
+        [
+          2048,
+          2297,
+          2546,
+          2795,
+          3044,
+          3293,
+          3542,
+          3791,
+          4040,
+          4047,
+          4054,
+          4061,
+          4068,
+          4075,
+          4082,
+          4089,
+          4096
+        ],
+        [
+          1024,
+          1149,
+          1274,
+          1399,
+          1524,
+          1649,
+          1774,
+          1899,
+          2024,
+          2027,
+          2030,
+          2033,
+          2036,
+          2039,
+          2042,
+          2045,
+          2048
+        ]
+      ],
+      "masks": [
+        4095,
+        4095,
+        2047
+      ],
+      "word_bytes": 2,
+      "f_trials": 257,
+      "pk_bytes": 1081,
+      "ct_bytes": 1113,
+      "wire_contract_sha256": "94206ab8bccc5b8b8270cf9cd751b891eb9c5c0f88a1da10be7977bdbc450422",
+      "parameter_id": "family20261107/94206ab8bccc5b8b8270cf9cd751b891eb9c5c0f88a1da10be7977bdbc450422",
+      "keygen_failure": {
+        "target": "each pool <=2^-256",
+        "f_exact_verified": true,
+        "g_exact_verified": true,
+        "f_reject_numerator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000066bd8c12ee3c44ff27e16cef58cb256277436578e5b154f8eac194ae92e25086abe37bd35a98c1949db2bddc35a540bd987c800266cd430c356c402f567bb68516236971852fe29d44bd0cfaaf9c10d532580814e4ad0145d801",
+        "f_reject_denominator_hex": "0x200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "attributed_estimates": {},
+      "number": 16,
+      "macro": "CNTRU_PROFILE_S1024_M256_D256_C198_7",
+      "symbol_prefix": "cntru_family_p16_"
+    }
+  ]
+}

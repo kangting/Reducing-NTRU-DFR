@@ -1,0 +1,791 @@
+{
+  "n": 1024,
+  "q": 373,
+  "ring": "Z_q[x]/(x^1024+1)",
+  "p_exponent": 512,
+  "block_offsets": [
+    0,
+    256,
+    512,
+    768
+  ],
+  "key_signs": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "ciphertext_signs": [
+    1,
+    -1,
+    1,
+    -1
+  ],
+  "internal_residue_bytes": 64,
+  "external_message_bytes": 32,
+  "shared_key_bytes": 32,
+  "rejection_seed_bytes": 32,
+  "pk_bytes": 1094,
+  "core_bytes": 1094,
+  "ct_bytes": 1126,
+  "f_candidates": 256,
+  "g_candidates": 2,
+  "keygen_rng_requests": [
+    131072,
+    1024,
+    32
+  ],
+  "fgr_word_bytes": 2,
+  "fgr_mapping": "LE16 & (LCM/GCD-normalized CDF total - 1)",
+  "message_mapping": "compact-prefix conditional bytes: classes 0/1/2/3 use no byte/&3/&3/&7",
+  "rho_bytes": 768,
+  "g_output_bytes": 832,
+  "f_output_bytes": 32,
+  "h_output_bytes": 32,
+  "encoding": "canonical little-endian radix-q; reject integers >= q^1024",
+  "framing": "ordered byte tuples, each prefixed by uint64 little-endian length",
+  "version": "Complementary-NTRU-ACWC0-FO-levels-v1",
+  "tables": [
+    {
+      "name": "f",
+      "rows": [
+        {
+          "atom": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 55,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 7,
+          "denominator": 128
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 17,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 128
+        }
+      ]
+    },
+    {
+      "name": "g",
+      "rows": [
+        {
+          "atom": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 2
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 7,
+          "denominator": 1024
+        },
+        {
+          "atom": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "numerator": 57,
+          "denominator": 1024
+        }
+      ]
+    },
+    {
+      "name": "r",
+      "rows": [
+        {
+          "atom": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 2
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 31,
+          "denominator": 2048
+        },
+        {
+          "atom": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "numerator": 97,
+          "denominator": 2048
+        }
+      ]
+    },
+    {
+      "name": "m",
+      "rows": [
+        {
+          "atom": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            0,
+            -1,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 4
+        },
+        {
+          "atom": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            -1
+          ],
+          "numerator": 1,
+          "denominator": 32
+        },
+        {
+          "atom": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 16
+        },
+        {
+          "atom": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "numerator": 1,
+          "denominator": 32
+        }
+      ]
+    }
+  ],
+  "wire_contract_sha256": "90de0f90dc821d64cf3457657b23d38da8077c82db8760619c5266eacb49d25f",
+  "parameter_id": "n1024-q373-P1+x512-block17-90de0f90dc821d64cf3457657b23d38da8077c82db8760619c5266eacb49d25f",
+  "orbit_masses": {
+    "f": [
+      110,
+      34,
+      112,
+      256
+    ],
+    "g": [
+      128,
+      14,
+      114,
+      256
+    ],
+    "r": [
+      128,
+      31,
+      97,
+      256
+    ],
+    "m": [
+      1,
+      2,
+      1,
+      4
+    ]
+  },
+  "user_supplied_estimates": {
+    "label": "DAWN classical/quantum Level V comparison candidate",
+    "classical": 270.05,
+    "quantum": 251.57,
+    "dfr_upper_bound_exponent": 177.72,
+    "scope": "Selected structured GSA paths with MATZOV costing; average accepted-key internal DFR upper bound.",
+    "independently_reproduced_here": false,
+    "not_claimed": [
+      "NIST certification",
+      "complete DAWN attack enumeration",
+      "global parameter optimality"
+    ]
+  }
+}

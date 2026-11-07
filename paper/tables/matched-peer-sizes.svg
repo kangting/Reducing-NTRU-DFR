@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1096" height="359" viewBox="0 0 1096 359">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Serif,serif">
+<text x="548.0" y="31" font-size="21" font-weight="normal" text-anchor="middle" fill="#111111">Matched peer API wire sizes</text>
+<line x1="30" y1="64" x2="1066" y2="64" stroke="#111111" stroke-width="2"/>
+<text x="155.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Scheme</text>
+<text x="358.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">M/u/K</text>
+<text x="358.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bits)</text>
+<text x="496.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">API CT</text>
+<text x="496.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="616.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">API PK</text>
+<text x="616.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="741.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">API total</text>
+<text x="741.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="871.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Source CT</text>
+<text x="871.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="1001.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Source PK</text>
+<text x="1001.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<line x1="30" y1="112" x2="1066" y2="112" stroke="#111111" stroke-width="1.6"/>
+<text x="40" y="136" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">END-512</text>
+<text x="358.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/—/256</text>
+<text x="496.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">384</text>
+<text x="616.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">514</text>
+<text x="741.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">898</text>
+<text x="871.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">384</text>
+<text x="1001.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">514</text>
+<line x1="30" y1="149" x2="1066" y2="149" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="173" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">BAT-512</text>
+<text x="358.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">128/—/—</text>
+<text x="496.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">473</text>
+<text x="616.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">521</text>
+<text x="741.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">994</text>
+<text x="871.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">472</text>
+<text x="1001.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">520</text>
+<line x1="30" y1="186" x2="1066" y2="186" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="210" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">END-1024</text>
+<text x="358.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">512/—/256</text>
+<text x="496.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">832</text>
+<text x="616.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1027</text>
+<text x="741.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1859</text>
+<text x="871.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">832</text>
+<text x="1001.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1027</text>
+<line x1="30" y1="223" x2="1066" y2="223" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="247" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">BAT-1024</text>
+<text x="358.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/—/—</text>
+<text x="496.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1006</text>
+<text x="616.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1230</text>
+<text x="741.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2236</text>
+<text x="871.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1005</text>
+<text x="1001.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1229</text>
+<line x1="30" y1="260" x2="1066" y2="260" stroke="#111111" stroke-width="2"/>
+<line x1="30" y1="64" x2="30" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="280" y1="64" x2="280" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="436" y1="64" x2="436" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="556" y1="64" x2="556" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="676" y1="64" x2="676" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="806" y1="64" x2="806" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="936" y1="64" x2="936" y2="260" stroke="#111111" stroke-width="0.55"/>
+<line x1="1066" y1="64" x2="1066" y2="260" stroke="#111111" stroke-width="0.55"/>
+<text x="30" y="283" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">API sizes come from the matched build descriptors; source sizes retain the archive convention.</text>
+<text x="30" y="304" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">BAT API keys and ciphertexts include one-byte headers beyond the header-free source metadata.</text>
+<text x="30" y="325" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">— means the source does not specify that length; message length does not imply shared-key length.</text>
+</g>
+</svg>

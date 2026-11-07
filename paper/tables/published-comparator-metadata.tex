@@ -1,0 +1,27 @@
+% Requires booktabs and graphicx.
+\begin{table*}[t]
+\centering
+\caption{Published comparator metadata (separate evidence models)}
+\label{tab:published-comparator-metadata}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Scheme & \shortstack{M/u/K\\(bits)} & \shortstack{Source CT\\(bytes)} & \shortstack{Source PK\\(bytes)} & C reported & Q reported & \shortstack{DFR exp.\\(reported)} \\
+\midrule
+DAWN-alpha-512 & 128/128/--- & 436 & 615 & 139.50 & 133.50 & 133.00 \\
+DAWN-alpha-512-prime & 256/256/256 & 514 & 615 & 140.00 & --- & 166.00 \\
+DAWN-alpha-1024 & 256/256/--- & 973 & 1229 & 269.90 & 250.80 & 163.00 \\
+BAT-512 & 128/---/--- & 472 & 520 & 140.30 & 124.70 & 146.70 \\
+BAT-1024 & 256/---/--- & 1005 & 1229 & 283.20 & 250.60 & 166.70 \\
+END-512 & 256/---/256 & 384 & 514 & 152.70 & --- & 130.00 \\
+END-1024 & 512/---/256 & 832 & 1027 & 287.10 & --- & 157.00 \\
+DAWN-beta-512 & 128/128/--- & 450 & 514 & 134.30 & 134.10 & 130.00 \\
+DAWN-beta-1024 & 256/256/--- & 1027 & 1027 & 266.50 & 251.20 & 138.00 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+Source-only sizes and model/DFR statements; no illustration timing is used.\par
+Published C/Q and DFR statements use heterogeneous models and must not be ranked as a common security scale.\par
+Exact attribution, relations, qualifications and URLs are retained in metadata JSON/CSV and Markdown.\par
+\end{minipage}
+\end{table*}

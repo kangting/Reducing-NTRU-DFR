@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="803" viewBox="0 0 1184 803">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Serif,serif">
+<text x="592.0" y="31" font-size="21" font-weight="normal" text-anchor="middle" fill="#111111">Appendix: all16 selected family profiles</text>
+<line x1="30" y1="64" x2="1154" y2="64" stroke="#111111" stroke-width="2"/>
+<text x="165.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Scheme</text>
+<text x="378.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">M/u/K</text>
+<text x="378.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bits)</text>
+<text x="511.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">CT</text>
+<text x="511.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="621.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">PK</text>
+<text x="621.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="738.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">CT+PK</text>
+<text x="738.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="859.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">C diag.</text>
+<text x="977.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Q diag.</text>
+<text x="1095.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">b ≈</text>
+<line x1="30" y1="112" x2="1154" y2="112" stroke="#111111" stroke-width="1.6"/>
+<text x="40" y="136" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">S512-q251</text>
+<text x="378.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="511.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">543</text>
+<text x="621.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">511</text>
+<text x="738.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1054</text>
+<text x="859.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">140.05</text>
+<text x="977.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">134.56</text>
+<text x="1095.0" y="136" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">166.15</text>
+<line x1="30" y1="149" x2="1154" y2="149" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="173" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">S1024-q347</text>
+<text x="378.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1113</text>
+<text x="621.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1081</text>
+<text x="738.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">2194</text>
+<text x="859.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">270.07</text>
+<text x="977.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">251.59</text>
+<text x="1095.0" y="173" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">163.38</text>
+<line x1="30" y1="186" x2="1154" y2="186" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="210" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">D512-q157</text>
+<text x="378.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">128/128/256</text>
+<text x="511.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">483</text>
+<text x="621.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">467</text>
+<text x="738.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">950</text>
+<text x="859.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">144.39</text>
+<text x="977.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">138.45</text>
+<text x="1095.0" y="210" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">133.38</text>
+<line x1="30" y1="223" x2="1154" y2="223" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="247" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">D1024-q251</text>
+<text x="378.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="511.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1053</text>
+<text x="621.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1021</text>
+<text x="738.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">2074</text>
+<text x="859.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">278.68</text>
+<text x="977.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">259.33</text>
+<text x="1095.0" y="247" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">166.86</text>
+<line x1="30" y1="260" x2="1154" y2="260" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="284" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q251 C139.5</text>
+<text x="378.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="511.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">543</text>
+<text x="621.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">511</text>
+<text x="738.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1054</text>
+<text x="859.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">139.54</text>
+<text x="977.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">134.10</text>
+<text x="1095.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">169.66</text>
+<line x1="30" y1="297" x2="1154" y2="297" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="321" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q251 den128</text>
+<text x="378.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="511.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">543</text>
+<text x="621.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">511</text>
+<text x="738.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1054</text>
+<text x="859.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">140.07</text>
+<text x="977.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">134.58</text>
+<text x="1095.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">166.02</text>
+<line x1="30" y1="334" x2="1154" y2="334" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="358" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q349</text>
+<text x="378.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1114</text>
+<text x="621.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1082</text>
+<text x="738.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2196</text>
+<text x="859.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">270.02</text>
+<text x="977.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">251.55</text>
+<text x="1095.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">164.87</text>
+<line x1="30" y1="371" x2="1154" y2="371" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="395" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 den256</text>
+<text x="378.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1113</text>
+<text x="621.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1081</text>
+<text x="738.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2194</text>
+<text x="859.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">270.02</text>
+<text x="977.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">251.54</text>
+<text x="1095.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">163.66</text>
+<line x1="30" y1="408" x2="1154" y2="408" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="432" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 den512</text>
+<text x="378.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1113</text>
+<text x="621.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1081</text>
+<text x="738.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2194</text>
+<text x="859.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">270.02</text>
+<text x="977.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">251.54</text>
+<text x="1095.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">163.70</text>
+<line x1="30" y1="445" x2="1154" y2="445" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="469" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">D1024-q269</text>
+<text x="378.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="511.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1066</text>
+<text x="621.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1034</text>
+<text x="738.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2100</text>
+<text x="859.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">276.76</text>
+<text x="977.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">257.61</text>
+<text x="1095.0" y="469" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">177.89</text>
+<line x1="30" y1="482" x2="1154" y2="482" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="506" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q269 BAT M128</text>
+<text x="378.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">128/256/256</text>
+<text x="511.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">533</text>
+<text x="621.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">517</text>
+<text x="738.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1050</text>
+<text x="859.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">144.01</text>
+<text x="977.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">138.13</text>
+<text x="1095.0" y="506" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">149.20</text>
+<line x1="30" y1="519" x2="1154" y2="519" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="543" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q373 BAT</text>
+<text x="378.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1126</text>
+<text x="621.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1094</text>
+<text x="738.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2220</text>
+<text x="859.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">272.02</text>
+<text x="977.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">253.35</text>
+<text x="1095.0" y="543" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">170.66</text>
+<line x1="30" y1="556" x2="1154" y2="556" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="580" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q379 DFR256</text>
+<text x="378.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1129</text>
+<text x="621.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1097</text>
+<text x="738.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2226</text>
+<text x="859.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">246.28</text>
+<text x="977.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">230.19</text>
+<text x="1095.0" y="580" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">262.55</text>
+<line x1="30" y1="593" x2="1154" y2="593" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="617" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 DFR256</text>
+<text x="378.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1113</text>
+<text x="621.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1081</text>
+<text x="738.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2194</text>
+<text x="859.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">192.29</text>
+<text x="977.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">181.59</text>
+<text x="1095.0" y="617" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">271.09</text>
+<line x1="30" y1="630" x2="1154" y2="630" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="654" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q541 DFR256</text>
+<text x="378.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1195</text>
+<text x="621.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1163</text>
+<text x="738.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2358</text>
+<text x="859.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">269.91</text>
+<text x="977.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">251.46</text>
+<text x="1095.0" y="654" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">257.15</text>
+<line x1="30" y1="667" x2="1154" y2="667" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="691" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 C198.7</text>
+<text x="378.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/512/256</text>
+<text x="511.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1113</text>
+<text x="621.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1081</text>
+<text x="738.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2194</text>
+<text x="859.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">199.07</text>
+<text x="977.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">187.70</text>
+<text x="1095.0" y="691" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">269.42</text>
+<line x1="30" y1="704" x2="1154" y2="704" stroke="#111111" stroke-width="2"/>
+<line x1="30" y1="64" x2="30" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="300" y1="64" x2="300" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="456" y1="64" x2="456" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="566" y1="64" x2="566" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="676" y1="64" x2="676" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="800" y1="64" x2="800" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="918" y1="64" x2="918" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="1036" y1="64" x2="1036" y2="704" stroke="#111111" stroke-width="0.55"/>
+<line x1="1154" y1="64" x2="1154" y2="704" stroke="#111111" stroke-width="0.55"/>
+<text x="30" y="727" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">M/u/K are external message / internal residue / shared-key output lengths in bits.</text>
+<text x="30" y="748" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">C/Q are supplied structural GSA/MATZOV diagnostics; b is approximate -log2(B), not a rounded strict inequality.</text>
+<text x="30" y="769" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">These columns are not a full KEM security claim or a NIST certificate. No compression denominator is assigned.</text>
+</g>
+</svg>

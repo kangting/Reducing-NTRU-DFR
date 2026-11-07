@@ -1,0 +1,31 @@
+% Requires booktabs and graphicx.
+\begin{table*}[t]
+\centering
+\caption{Primary profiles and matched peers: local KEM performance}
+\label{tab:primary-performance}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{REF (kcycles)} & \multicolumn{3}{c}{AVX2 (kcycles)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Scheme & KeyGen & Encaps & Decaps & KeyGen & Encaps & Decaps \\
+\midrule
+BAT-512 & \shortstack{19,668.915\\{}[14,325.761, 24,553.788]} & \shortstack{47.020\\{}[46.978, 47.112]} & \shortstack{300.402\\{}[300.285, 300.454]} & \shortstack{17,832.227\\{}[16,642.649, 21,404.566]} & \shortstack{10.061\\{}[10.050, 10.070]} & \shortstack{56.612\\{}[56.586, 56.660]} \\
+END-512 [1] & \shortstack{9,216.122\\{}[8,418.315, 10,016.721]} & \shortstack{28.908\\{}[28.796, 28.988]} & \shortstack{328.230\\{}[328.078, 328.425]} &  &  &  \\
+\textbf{S512-q251} & \shortstack{2,222.412\\{}[2,220.931, 2,229.777]} & \shortstack{300.676\\{}[300.543, 300.744]} & \shortstack{460.114\\{}[459.999, 460.254]} & \shortstack{1,843.785\\{}[1,841.390, 1,845.584]} & \shortstack{184.417\\{}[184.247, 184.541]} & \shortstack{232.698\\{}[232.421, 232.929]} \\
+\textbf{D512-q157} & \shortstack{2,260.666\\{}[2,257.419, 2,264.095]} & \shortstack{268.340\\{}[268.166, 268.436]} & \shortstack{427.895\\{}[427.696, 428.057]} & \shortstack{1,878.953\\{}[1,875.310, 1,882.568]} & \shortstack{152.781\\{}[152.730, 152.863]} & \shortstack{201.447\\{}[201.392, 201.552]} \\
+BAT-1024 & \shortstack{106,227.522\\{}[77,951.843, 135,044.927]} & \shortstack{93.911\\{}[93.849, 93.950]} & \shortstack{621.914\\{}[621.791, 622.012]} & \shortstack{97,193.241\\{}[83,738.468, 104,319.250]} & \shortstack{21.241\\{}[21.225, 21.269]} & \shortstack{116.493\\{}[116.439, 116.555]} \\
+END-1024 [2,3] &  &  &  &  &  &  \\
+\textbf{S1024-q347} & \shortstack{4,917.572\\{}[4,913.513, 4,920.746]} & \shortstack{741.887\\{}[741.716, 741.972]} & \shortstack{1,065.250\\{}[1,065.098, 1,065.653]} & \shortstack{3,861.338\\{}[3,859.300, 3,865.328]} & \shortstack{484.334\\{}[484.092, 484.443]} & \shortstack{560.771\\{}[560.662, 560.828]} \\
+\textbf{D1024-q251} & \shortstack{4,648.099\\{}[4,642.902, 4,657.134]} & \shortstack{696.215\\{}[696.013, 696.385]} & \shortstack{1,023.468\\{}[1,023.243, 1,023.748]} & \shortstack{3,568.026\\{}[3,566.258, 3,571.190]} & \shortstack{441.248\\{}[441.100, 441.425]} & \shortstack{521.723\\{}[521.609, 521.894]} \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+Median of accepted batch means; brackets give the prespecified bootstrap 95\% interval.\par
+1 kcycle = 1000 raw hardware CPU cycles. Counter-read overhead is retained, not subtracted.\par
+Blank performance cells are correctness exclusions, never zero costs. Batch counts are retained in CSV.\par
+[1] END-512 / AVX2: Shared-key preflight failed through the preserved-source adapter; no timing is ranked\par
+[2] END-1024 / REF: Shared-key preflight failed through the preserved-source adapter; no timing is ranked\par
+[3] END-1024 / AVX2: Shared-key preflight failed through the preserved-source adapter; no timing is ranked\par
+\end{minipage}
+\end{table*}

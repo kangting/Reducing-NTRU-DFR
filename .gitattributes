@@ -1,0 +1,5 @@
+# Preserve imported implementation/research bytes; CSVs are portable text.
+benchmarks/vendor/** -text -whitespace
+family_20261107/upstream/** -text -whitespace
+*.csv text eol=lf
+*.gz binary

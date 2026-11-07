@@ -1,0 +1,984 @@
+{
+  "profiles": [
+    {
+      "number": 1,
+      "id": "S512_q251_C140_sharp",
+      "label": "S512-q251",
+      "mode": "single",
+      "n": 512,
+      "q": 251,
+      "M_bits": 256,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 543,
+      "pk_bytes": 511,
+      "total_bytes": 1054,
+      "C_diagnostic": 140.05457838937312,
+      "Q_diagnostic": 134.56191609441757,
+      "DFR_bound_b_approx": 166.15402663034274,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "main_recommendations",
+      "primary": true,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "247/512",
+          "5/32",
+          "185/512"
+        ],
+        [
+          "1/2",
+          "71/512",
+          "185/512"
+        ],
+        [
+          "1/2",
+          "113/512",
+          "143/512"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 2,
+      "id": "S1024_q347_den128_sharp",
+      "label": "S1024-q347",
+      "mode": "single",
+      "n": 1024,
+      "q": 347,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1113,
+      "pk_bytes": 1081,
+      "total_bytes": 2194,
+      "C_diagnostic": 270.06805409241394,
+      "Q_diagnostic": 251.59212663033924,
+      "DFR_bound_b_approx": 163.38335472647213,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "main_recommendations",
+      "primary": true,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "63/128",
+          "5/64",
+          "55/128"
+        ],
+        [
+          "1/2",
+          "9/128",
+          "55/128"
+        ],
+        [
+          "1/2",
+          "21/128",
+          "43/128"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 3,
+      "id": "D512_M128_W_experimental_correction_on_q157",
+      "label": "D512-q157",
+      "mode": "double",
+      "n": 512,
+      "q": 157,
+      "M_bits": 128,
+      "u_bits": 128,
+      "K_bits": 256,
+      "ct_bytes": 483,
+      "pk_bytes": 467,
+      "total_bytes": 950,
+      "C_diagnostic": 144.38567105015628,
+      "Q_diagnostic": 138.44636443585333,
+      "DFR_bound_b_approx": 133.37905551627864,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "correction-aware pair transfer MGF rational certificate, no output independence",
+      "selection_category": "main_recommendations",
+      "primary": true,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "5/256",
+          "123/256"
+        ],
+        [
+          "1/2",
+          "15/64",
+          "17/64"
+        ],
+        [
+          "1/2",
+          "15/64",
+          "17/64"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "number": 4,
+      "id": "D1024_M256_W_experimental_correction_on_q251",
+      "label": "D1024-q251",
+      "mode": "double",
+      "n": 1024,
+      "q": 251,
+      "M_bits": 256,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 1053,
+      "pk_bytes": 1021,
+      "total_bytes": 2074,
+      "C_diagnostic": 278.67978514065004,
+      "Q_diagnostic": 259.33139265676186,
+      "DFR_bound_b_approx": 166.86190608525794,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "correction-aware pair transfer MGF rational certificate, no output independence",
+      "selection_category": "main_recommendations",
+      "primary": true,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "3/256",
+          "125/256"
+        ],
+        [
+          "1/2",
+          "17/256",
+          "111/256"
+        ],
+        [
+          "1/2",
+          "17/256",
+          "111/256"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "number": 5,
+      "id": "S512_q251_C1395_sharp",
+      "label": "S512-q251 C139.5",
+      "mode": "single",
+      "n": 512,
+      "q": 251,
+      "M_bits": 256,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 543,
+      "pk_bytes": 511,
+      "total_bytes": 1054,
+      "C_diagnostic": 139.53736771935266,
+      "Q_diagnostic": 134.10052177590683,
+      "DFR_bound_b_approx": 169.65906753496756,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "single_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "39/256",
+          "89/256"
+        ],
+        [
+          "1/2",
+          "39/256",
+          "89/256"
+        ],
+        [
+          "1/2",
+          "15/64",
+          "17/64"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 6,
+      "id": "S512_q251_C140_simple_sharp",
+      "label": "S512-q251 den128",
+      "mode": "single",
+      "n": 512,
+      "q": 251,
+      "M_bits": 256,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 543,
+      "pk_bytes": 511,
+      "total_bytes": 1054,
+      "C_diagnostic": 140.06992635370656,
+      "Q_diagnostic": 134.577264058751,
+      "DFR_bound_b_approx": 166.015991895752,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "single_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "63/128",
+          "9/64",
+          "47/128"
+        ],
+        [
+          "1/2",
+          "17/128",
+          "47/128"
+        ],
+        [
+          "1/2",
+          "7/32",
+          "9/32"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 7,
+      "id": "S1024_q349_refined",
+      "label": "S1024-q349",
+      "mode": "single",
+      "n": 1024,
+      "q": 349,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1114,
+      "pk_bytes": 1082,
+      "total_bytes": 2196,
+      "C_diagnostic": 270.02466149690053,
+      "Q_diagnostic": 251.54873403482586,
+      "DFR_bound_b_approx": 164.87072218005778,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "single_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "125/256",
+          "21/256",
+          "55/128"
+        ],
+        [
+          "1/2",
+          "9/128",
+          "55/128"
+        ],
+        [
+          "1/2",
+          "21/128",
+          "43/128"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 8,
+      "id": "S1024_q347_den256_sharp",
+      "label": "S1024-q347 den256",
+      "mode": "single",
+      "n": 1024,
+      "q": 347,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1113,
+      "pk_bytes": 1081,
+      "total_bytes": 2194,
+      "C_diagnostic": 270.0158241336414,
+      "Q_diagnostic": 251.53989667156668,
+      "DFR_bound_b_approx": 163.66196448965275,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "single_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "125/256",
+          "11/128",
+          "109/256"
+        ],
+        [
+          "1/2",
+          "19/256",
+          "109/256"
+        ],
+        [
+          "1/2",
+          "43/256",
+          "85/256"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 9,
+      "id": "S1024_q347_den512_sharp",
+      "label": "S1024-q347 den512",
+      "mode": "single",
+      "n": 1024,
+      "q": 347,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1113,
+      "pk_bytes": 1081,
+      "total_bytes": 2194,
+      "C_diagnostic": 270.0158241336414,
+      "Q_diagnostic": 251.53989667156668,
+      "DFR_bound_b_approx": 163.70188365181275,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact accepted-key coefficient PGF and 2n union bound",
+      "selection_category": "single_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "249/512",
+          "23/256",
+          "217/512"
+        ],
+        [
+          "1/2",
+          "39/512",
+          "217/512"
+        ],
+        [
+          "1/2",
+          "43/256",
+          "85/256"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 10,
+      "id": "D1024_M256_W_experimental_correction_on_q269",
+      "label": "D1024-q269",
+      "mode": "double",
+      "n": 1024,
+      "q": 269,
+      "M_bits": 256,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 1066,
+      "pk_bytes": 1034,
+      "total_bytes": 2100,
+      "C_diagnostic": 276.7615739888102,
+      "Q_diagnostic": 257.6102157874435,
+      "DFR_bound_b_approx": 177.89121069630892,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "correction-aware pair transfer MGF rational certificate, no output independence",
+      "selection_category": "double_alternatives",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "3/256",
+          "125/256"
+        ],
+        [
+          "1/2",
+          "17/256",
+          "111/256"
+        ],
+        [
+          "1/2",
+          "17/256",
+          "111/256"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "number": 11,
+      "id": "S512_M128_BAT_C144",
+      "label": "S512-q269 BAT M128",
+      "mode": "single",
+      "n": 512,
+      "q": 269,
+      "M_bits": 128,
+      "u_bits": 256,
+      "K_bits": 256,
+      "ct_bytes": 533,
+      "pk_bytes": 517,
+      "total_bytes": 1050,
+      "C_diagnostic": 144.01022459387121,
+      "Q_diagnostic": 138.12675939681836,
+      "DFR_bound_b_approx": 149.1959188293922,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "archive finite accepted-key-average upper bound",
+      "selection_category": "bat_target_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "23/128",
+          "65/128",
+          "5/16"
+        ],
+        [
+          "1/2",
+          "1/256",
+          "127/256"
+        ],
+        [
+          "119/256",
+          "3/256",
+          "67/128"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 12,
+      "id": "S1024_M256_BAT_C272",
+      "label": "S1024-q373 BAT",
+      "mode": "single",
+      "n": 1024,
+      "q": 373,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1126,
+      "pk_bytes": 1094,
+      "total_bytes": 2220,
+      "C_diagnostic": 272.0212667114249,
+      "Q_diagnostic": 253.34835728177922,
+      "DFR_bound_b_approx": 170.66161184069642,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "archive finite accepted-key-average upper bound",
+      "selection_category": "bat_target_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "47/128",
+          "3/16",
+          "57/128"
+        ],
+        [
+          "1/2",
+          "1/32",
+          "15/32"
+        ],
+        [
+          "1/2",
+          "1/16",
+          "7/16"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 13,
+      "id": "S1024_M256_D256_simple",
+      "label": "S1024-q379 DFR256",
+      "mode": "single",
+      "n": 1024,
+      "q": 379,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1129,
+      "pk_bytes": 1097,
+      "total_bytes": 2226,
+      "C_diagnostic": 246.27889139503895,
+      "Q_diagnostic": 230.1935932698949,
+      "DFR_bound_b_approx": 262.5545091726435,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact integer one-coordinate convolution, union bound 2n, rational acceptance correction",
+      "selection_category": "strong_dfr_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/2",
+          "3/8",
+          "1/8"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 14,
+      "id": "S1024_M256_D256_347",
+      "label": "S1024-q347 DFR256",
+      "mode": "single",
+      "n": 1024,
+      "q": 347,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1113,
+      "pk_bytes": 1081,
+      "total_bytes": 2194,
+      "C_diagnostic": 192.2904049520616,
+      "Q_diagnostic": 181.5948166083679,
+      "DFR_bound_b_approx": 271.08526727119715,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact integer one-coordinate convolution, union bound 2n, rational acceptance correction",
+      "selection_category": "strong_dfr_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "251/512",
+          "5/512"
+        ],
+        [
+          "1/2",
+          "251/512",
+          "5/512"
+        ],
+        [
+          "1/2",
+          "503/1024",
+          "9/1024"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 15,
+      "id": "S1024_M256_D256_541",
+      "label": "S1024-q541 DFR256",
+      "mode": "single",
+      "n": 1024,
+      "q": 541,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1195,
+      "pk_bytes": 1163,
+      "total_bytes": 2358,
+      "C_diagnostic": 269.9050744592636,
+      "Q_diagnostic": 251.45728600839726,
+      "DFR_bound_b_approx": 257.15138936747644,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact integer one-coordinate convolution, union bound 2n, rational acceptance correction",
+      "selection_category": "strong_dfr_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "8293/65536",
+          "38187/65536",
+          "1191/4096"
+        ],
+        [
+          "13227/32768",
+          "3/65536",
+          "39079/65536"
+        ],
+        [
+          "355/1024",
+          "5/65536",
+          "42811/65536"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    },
+    {
+      "number": 16,
+      "id": "S1024_M256_D256_C198_7",
+      "label": "S1024-q347 C198.7",
+      "mode": "single",
+      "n": 1024,
+      "q": 347,
+      "M_bits": 256,
+      "u_bits": 512,
+      "K_bits": 256,
+      "ct_bytes": 1113,
+      "pk_bytes": 1081,
+      "total_bytes": 2194,
+      "C_diagnostic": 199.06989460275076,
+      "Q_diagnostic": 187.70149561354816,
+      "DFR_bound_b_approx": 269.41719806668425,
+      "security_evidence": "archive structural GSA/MATZOV diagnostic; not full KEM security or NIST certification",
+      "dfr_evidence": "exact integer one-coordinate convolution, union bound 2n, rational acceptance correction",
+      "selection_category": "strong_dfr_profiles",
+      "primary": false,
+      "compression_ratio": null,
+      "compression_note": "No unstated published denominator is assigned to this row",
+      "nist_certification": null,
+      "version": "Complementary-NTRU-Family-ACWC0-FO-20261107-v1",
+      "law_triples": [
+        [
+          "1/2",
+          "249/512",
+          "7/512"
+        ],
+        [
+          "1/2",
+          "249/512",
+          "7/512"
+        ],
+        [
+          "1/2",
+          "125/256",
+          "3/256"
+        ],
+        [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      ]
+    }
+  ],
+  "published_comparator_metadata": [
+    {
+      "scheme": "DAWN-alpha-512",
+      "n": 512,
+      "q": 769,
+      "m_bits": 128,
+      "pk_bytes": 615,
+      "ct_bytes": 436,
+      "total_bytes": 1051,
+      "category": "I",
+      "dfr_average_exponent": 133,
+      "dfr_message_worst_exponent": 130,
+      "dfr_reported_exponent": 133,
+      "dfr_note": "Author estimates; message-worst fixes the hardest all-one message, not a uniform-key certificate.",
+      "security_classical_bits": 139.5,
+      "security_quantum_bits": 133.5,
+      "security_model": "DAWN Table 7, estimator 5ba00f5, MATZOV; minimum over NTRU and RLWE",
+      "shared_key_bits": null,
+      "shared_key_source": "HashK output length not specified in recovered Algorithms6-8; official implementation/API not located. Do not infer output length from message length.",
+      "internal_message_bits": 128,
+      "external_message_bits": 128,
+      "dfr_evidence": "Heuristic: section4.3 explicitly assumes output coefficient independence; no uniform-key certificate.",
+      "primary_url": "https://eprint.iacr.org/2025/1520"
+    },
+    {
+      "scheme": "DAWN-alpha-512-prime",
+      "n": 512,
+      "q": 769,
+      "m_bits": 256,
+      "pk_bytes": 615,
+      "ct_bytes": 514,
+      "total_bytes": 1129,
+      "category": "I",
+      "dfr_average_exponent": null,
+      "dfr_message_worst_exponent": null,
+      "dfr_reported_exponent": 166,
+      "dfr_note": "Table 1 reported DFR; specific average/worst qualification not separately verified. w=1 single encoding variant.",
+      "security_classical_bits": 140,
+      "security_quantum_bits": null,
+      "security_model": "Table 1 rounded classical value; no separate Table 7 row.",
+      "inherited_security_classical_bits": 139.5,
+      "inherited_security_quantum_bits": 133.5,
+      "inherited_security_note": "Only inferable via section 4.4 same-security statement; not separately tabulated or independently rerun.",
+      "shared_key_bits": 256,
+      "shared_key_source": "Paper section1.3 p7 explicitly states 256-bit plaintext and shared key.",
+      "internal_message_bits": 256,
+      "external_message_bits": 256,
+      "dfr_evidence": "Heuristic: section4.3 explicitly assumes output coefficient independence; no uniform-key certificate.",
+      "primary_url": "https://eprint.iacr.org/2025/1520"
+    },
+    {
+      "scheme": "DAWN-alpha-1024",
+      "n": 1024,
+      "q": 769,
+      "m_bits": 256,
+      "pk_bytes": 1229,
+      "ct_bytes": 973,
+      "total_bytes": 2202,
+      "category": "V",
+      "dfr_average_exponent": 163,
+      "dfr_message_worst_exponent": 156,
+      "dfr_reported_exponent": 163,
+      "dfr_note": "Author estimates; message-worst fixes the hardest all-one message, not a uniform-key certificate.",
+      "security_classical_bits": 269.9,
+      "security_quantum_bits": 250.8,
+      "security_model": "DAWN Table 7, estimator 5ba00f5, MATZOV; minimum over NTRU and RLWE",
+      "shared_key_bits": null,
+      "shared_key_source": "HashK output length not specified in recovered Algorithms6-8; official implementation/API not located. Do not infer output length from message length.",
+      "internal_message_bits": 256,
+      "external_message_bits": 256,
+      "dfr_evidence": "Heuristic: section4.3 explicitly assumes output coefficient independence; no uniform-key certificate.",
+      "primary_url": "https://eprint.iacr.org/2025/1520"
+    },
+    {
+      "scheme": "BAT-512",
+      "n": 512,
+      "q": 257,
+      "m_bits": 128,
+      "pk_bytes": 520,
+      "ct_bytes": 472,
+      "total_bytes": 992,
+      "category": "I",
+      "dfr_average_exponent": 146.7,
+      "dfr_message_worst_exponent": null,
+      "dfr_reported_exponent": 146.7,
+      "dfr_note": "Numerical average over 100 generated keys, Table 3; standard deviation of log(rate) around 8.",
+      "security_classical_bits": 140.3,
+      "security_quantum_bits": 124.7,
+      "security_model": "Published BAT Table 5 minima; one-tour d*2^(0.292 beta) / d*2^(0.257 beta), not DAWN MATZOV.",
+      "dawn_reestimated_classical_bits": 144,
+      "dawn_reestimated_quantum_bits": null,
+      "header_bytes_in_each_pk_ct": 0,
+      "internal_message_bits": null,
+      "external_message_bits": 128,
+      "published_pk_bytes": 521,
+      "published_ct_bytes": 473,
+      "dfr_evidence": "Numerical DFR calculation averaged over100 keys, with trapdoor/noise heuristic; not a100-trial empirical rare-failure estimate.",
+      "primary_url": "https://d-nb.info/1275147933/34"
+    },
+    {
+      "scheme": "BAT-1024",
+      "n": 1024,
+      "q": 769,
+      "m_bits": 256,
+      "pk_bytes": 1229,
+      "ct_bytes": 1005,
+      "total_bytes": 2234,
+      "category": "V",
+      "dfr_average_exponent": 166.7,
+      "dfr_message_worst_exponent": null,
+      "dfr_reported_exponent": 166.7,
+      "dfr_note": "Numerical average over 100 generated keys, Table 3; standard deviation of log(rate) around 8.",
+      "security_classical_bits": 283.2,
+      "security_quantum_bits": 250.6,
+      "security_model": "Published BAT Table 5 minima; one-tour d*2^(0.292 beta) / d*2^(0.257 beta), not DAWN MATZOV.",
+      "dawn_reestimated_classical_bits": 272,
+      "dawn_reestimated_quantum_bits": null,
+      "header_bytes_in_each_pk_ct": 0,
+      "internal_message_bits": null,
+      "external_message_bits": 256,
+      "published_pk_bytes": 1230,
+      "published_ct_bytes": 1006,
+      "dfr_evidence": "Numerical DFR calculation averaged over100 keys, with trapdoor/noise heuristic; not a100-trial empirical rare-failure estimate.",
+      "primary_url": "https://d-nb.info/1275147933/34"
+    },
+    {
+      "scheme": "END-512",
+      "n": 512,
+      "q": 257,
+      "m_bits": 256,
+      "pk_bytes": 514,
+      "ct_bytes": 384,
+      "total_bytes": 898,
+      "category": "I",
+      "dfr_average_exponent": 130,
+      "dfr_average_relation": "<",
+      "dfr_message_worst_exponent": 124.3,
+      "dfr_message_worst_relation": "<",
+      "dfr_reported_exponent": 130,
+      "dfr_note": "Appendix D Lemma 5 states average <2^-130, ACWC message-worst <2^-124.3. Worst definition still averages over keys.",
+      "security_classical_bits": 152.7,
+      "security_quantum_bits": null,
+      "security_model": "Author notebook cached classical outputs, standard estimator revision 3e48ef421ec256afddb3e7d2249a77eab6e9ba12; not independently rerun and not paper Table 4 verification.",
+      "shared_key_bits": 256,
+      "internal_message_bits": null,
+      "external_message_bits": 256,
+      "dfr_evidence": "Heuristic: coefficient-independence, FCL exclusion and trapdoor/verification models; exact correctness reduction does not certify its input numerical DFR.",
+      "primary_url": "https://eprint.iacr.org/2026/1715"
+    },
+    {
+      "scheme": "END-1024",
+      "n": 1024,
+      "q": 257,
+      "m_bits": 512,
+      "pk_bytes": 1027,
+      "ct_bytes": 832,
+      "total_bytes": 1859,
+      "category": null,
+      "category_note": "Higher-security author set; exact NIST category label in missing paper table not independently read.",
+      "dfr_average_exponent": 157,
+      "dfr_message_worst_exponent": 157,
+      "dfr_message_worst_relation": "approximately",
+      "dfr_reported_exponent": 157,
+      "dfr_note": "Appendix D says the DPKE average delta corresponds to Table3 and gives the corresponding END1024 ACWC value essentially2^-157. The Table3 cell itself is still absent from fetched text; average157 is source-linked inference. Do not call a fresh independent Table3 verification.",
+      "security_classical_bits": 287.1,
+      "security_quantum_bits": null,
+      "security_model": "Author notebook cached classical outputs, standard estimator revision 3e48ef421ec256afddb3e7d2249a77eab6e9ba12; not independently rerun and not paper Table 4 verification.",
+      "shared_key_bits": 256,
+      "internal_message_bits": null,
+      "external_message_bits": 512,
+      "dfr_evidence": "Heuristic: coefficient-independence, FCL exclusion and trapdoor/verification models; exact correctness reduction does not certify its input numerical DFR.",
+      "primary_url": "https://eprint.iacr.org/2026/1715",
+      "dfr_average_relation": "approximately; inferred from Appendix D linkage"
+    },
+    {
+      "scheme": "DAWN-beta-512",
+      "n": 512,
+      "q": 257,
+      "m_bits": 128,
+      "external_message_bits": 128,
+      "internal_message_bits": 128,
+      "shared_key_bits": null,
+      "pk_bytes": 514,
+      "ct_bytes": 450,
+      "total_bytes": 964,
+      "category": "I",
+      "dfr_average_exponent": 130,
+      "dfr_message_worst_exponent": 119,
+      "dfr_reported_exponent": 130,
+      "dfr_note": "Parenthesized beta values in section1.2; worst message is all-one, not a uniform-key bound.",
+      "dfr_evidence": "Heuristic: section4.3 coefficient-independence assumption.",
+      "security_classical_bits": 134.3,
+      "security_quantum_bits": 134.1,
+      "security_model": "DAWN Table7 estimator5ba00f5 MATZOV; minNTRU/RLWE.",
+      "design_objective": "Minimize public-key plus ciphertext sum; supplemental comparator, not same C/DFR target as alpha.",
+      "primary_url": "https://eprint.iacr.org/2025/1520"
+    },
+    {
+      "scheme": "DAWN-beta-1024",
+      "n": 1024,
+      "q": 257,
+      "m_bits": 256,
+      "external_message_bits": 256,
+      "internal_message_bits": 256,
+      "shared_key_bits": null,
+      "pk_bytes": 1027,
+      "ct_bytes": 1027,
+      "total_bytes": 2054,
+      "category": "V",
+      "dfr_average_exponent": 138,
+      "dfr_message_worst_exponent": 114,
+      "dfr_reported_exponent": 138,
+      "dfr_note": "Parenthesized beta values in section1.2; worst message is all-one, not a uniform-key bound.",
+      "dfr_evidence": "Heuristic: section4.3 coefficient-independence assumption.",
+      "security_classical_bits": 266.5,
+      "security_quantum_bits": 251.2,
+      "security_model": "DAWN Table7 estimator5ba00f5 MATZOV; minNTRU/RLWE.",
+      "design_objective": "Minimize public-key plus ciphertext sum; supplemental comparator, not same C/DFR target as alpha.",
+      "primary_url": "https://eprint.iacr.org/2025/1520"
+    }
+  ],
+  "notes": [
+    "All size rows include ACWC0 mask and exclude optional scheme headers",
+    "C/Q and b are supplied archive diagnostics/bounds, not results of the local timing run",
+    "Approximate b is never rounded into a strict inequality",
+    "External comparator security/DFR evidence is heterogeneous; do not rank it against local-model bounds",
+    "The target image is a layout reference, not data from this machine"
+  ]
+}

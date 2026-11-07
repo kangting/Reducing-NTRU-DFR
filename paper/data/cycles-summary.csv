@@ -1,0 +1,178 @@
+study,target,operation,isa,status,exclusion_reason,median_kcycles,ci95_low_kcycles,ci95_high_kcycles,accepted_batches,rejected_batches
+q211,hardened-portable,keygen,x86-64,measured,,2353.318,2350.646,2356.242,101,0
+q211,hardened-portable,encaps,x86-64,measured,,320.282375,320.21415625,320.3924375,100,1
+q211,hardened-portable,decaps,x86-64,measured,,473.12859375,472.99496875,473.30103125,97,4
+q211,hardened-scalar-v3,keygen,x86-64-v3,measured,,2214.5855,2212.878,2216.5195,98,3
+q211,hardened-scalar-v3,encaps,x86-64-v3,measured,,271.94034375,271.8455625,272.00575,96,5
+q211,hardened-scalar-v3,decaps,x86-64-v3,measured,,418.96659375,418.81834375,419.1333125,99,2
+q211,hardened-avx2,keygen,x86-64-v3,measured,,1778.897,1776.5665,1780.993,98,3
+q211,hardened-avx2,encaps,x86-64-v3,measured,,165.8651875,165.782625,165.9566875,99,2
+q211,hardened-avx2,decaps,x86-64-v3,measured,,206.910890625,206.821890625,206.9899375,98,3
+q211,bat-portable,keygen,x86-64,measured,,15495.783,10328.04,20008.817,81,20
+q211,bat-portable,encaps,x86-64,measured,,46.97840625,46.9235625,47.04446875,99,2
+q211,bat-portable,decaps,x86-64,measured,,300.380234375,300.3178125,300.482375,96,5
+q211,bat-avx2,keygen,x86-64-v3,measured,,17027.7015,10888.3235,22013.564,90,11
+q211,bat-avx2,encaps,x86-64-v3,measured,,10.05109375,10.040125,10.05571875,100,1
+q211,bat-avx2,decaps,x86-64-v3,measured,,56.59821875,56.575,56.635625,101,0
+q211,end-portable,keygen,x86-64,measured,,8442.447,7651.362,9229.257,85,16
+q211,end-portable,encaps,x86-64,measured,,28.951359375,28.8623125,29.06203125,100,1
+q211,end-portable,decaps,x86-64,measured,,328.21625,328.0330625,328.343390625,88,13
+q211,end-v3,keygen,x86-64-v3,measured,,8474.1115,8063.3385,8881.249,96,5
+q211,end-v3,encaps,x86-64-v3,measured,,25.444625,25.433125,25.46271875,99,2
+q211,end-v3,decaps,x86-64-v3,measured,,307.654625,307.5365625,307.76246875,97,4
+q211,end-avx2,keygen,x86-64-v3,excluded,Author AVX2 code failed shared-key correctness; no timing is ranked,,,,,
+q211,end-avx2,encaps,x86-64-v3,excluded,Author AVX2 code failed shared-key correctness; no timing is ranked,,,,,
+q211,end-avx2,decaps,x86-64-v3,excluded,Author AVX2 code failed shared-key correctness; no timing is ranked,,,,,
+levels,q307-portable,keygen,x86-64,measured,,4798.615,4789.786,4804.343,101,0
+levels,q307-portable,encaps,x86-64,measured,,902.15484375,901.95828125,902.43921875,99,2
+levels,q307-portable,decaps,x86-64,measured,,1223.55171875,1222.870875,1223.9415625,99,2
+levels,q307-avx2,keygen,x86-64-v3,measured,,3686.093,3676.127,3689.341,101,0
+levels,q307-avx2,encaps,x86-64-v3,measured,,481.958671875,481.8648125,482.0618125,100,1
+levels,q307-avx2,decaps,x86-64-v3,measured,,556.76925,556.60909375,556.84746875,97,4
+levels,q331-portable,keygen,x86-64,measured,,4795.688,4776.447,4898.545,97,4
+levels,q331-portable,encaps,x86-64,measured,,906.1865,904.857125,907.01521875,97,4
+levels,q331-portable,decaps,x86-64,measured,,1225.090984375,1224.25559375,1226.0223125,96,5
+levels,q331-avx2,keygen,x86-64-v3,measured,,3776.71,3683.394,3818.982,100,1
+levels,q331-avx2,encaps,x86-64-v3,measured,,486.5084375,486.33725,486.67565625,98,3
+levels,q331-avx2,decaps,x86-64-v3,measured,,560.538875,560.446921875,560.631203125,98,3
+levels,q373-portable,keygen,x86-64,measured,,4943.71,4936.001,4961.46,98,3
+levels,q373-portable,encaps,x86-64,measured,,908.4138125,908.04815625,909.1060625,98,3
+levels,q373-portable,decaps,x86-64,measured,,1229.23475,1228.7553125,1230.01903125,97,4
+levels,q373-avx2,keygen,x86-64-v3,measured,,3861.555,3853.521,3867.96,99,2
+levels,q373-avx2,encaps,x86-64-v3,measured,,491.079,490.946125,491.1796875,97,4
+levels,q373-avx2,decaps,x86-64-v3,measured,,564.785203125,564.7400625,564.9415,100,1
+levels,bat1024-portable,keygen,x86-64,measured,,78379.444,53731.266,113029.965,51,50
+levels,bat1024-portable,encaps,x86-64,measured,,93.9248125,93.88265625,93.98534375,97,4
+levels,bat1024-portable,decaps,x86-64,measured,,621.71753125,621.42434375,621.866375,89,12
+levels,bat1024-avx2,keygen,x86-64-v3,measured,,80708.353,52072.204,91481.266,45,56
+levels,bat1024-avx2,encaps,x86-64-v3,measured,,21.250515625,21.235765625,21.28175,100,1
+levels,bat1024-avx2,decaps,x86-64-v3,measured,,116.4904375,116.4416875,116.56640625,99,2
+levels,end1024-portable,keygen,x86-64,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-portable,encaps,x86-64,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-portable,decaps,x86-64,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-v3,keygen,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-v3,encaps,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-v3,decaps,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-avx2,keygen,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-avx2,encaps,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+levels,end1024-avx2,decaps,x86-64-v3,excluded,Author END-1024 API failed shared-key correctness in the adapter; no timing is ranked,,,,,
+family,p01-ref,keygen,x86-64,measured,,2222.412,2220.931,2229.777,101,0
+family,p01-ref,encaps,x86-64,measured,,300.6761875,300.5429375,300.74378125,100,1
+family,p01-ref,decaps,x86-64,measured,,460.114,459.9985625,460.253875,101,0
+family,p01-avx2,keygen,x86-64-v3,measured,,1843.785,1841.39,1845.5845,98,3
+family,p01-avx2,encaps,x86-64-v3,measured,,184.4168125,184.247375,184.5411875,98,3
+family,p01-avx2,decaps,x86-64-v3,measured,,232.69821875,232.42059375,232.928625,99,2
+family,p02-ref,keygen,x86-64,measured,,4917.572,4913.513,4920.746,100,1
+family,p02-ref,encaps,x86-64,measured,,741.886890625,741.716265625,741.971921875,100,1
+family,p02-ref,decaps,x86-64,measured,,1065.24978125,1065.0975,1065.65328125,99,2
+family,p02-avx2,keygen,x86-64-v3,measured,,3861.338,3859.2995,3865.328,100,1
+family,p02-avx2,encaps,x86-64-v3,measured,,484.3345,484.09228125,484.4433125,99,2
+family,p02-avx2,decaps,x86-64-v3,measured,,560.77134375,560.6620625,560.82775,93,8
+family,p03-ref,keygen,x86-64,measured,,2260.666,2257.419,2264.095,101,0
+family,p03-ref,encaps,x86-64,measured,,268.340484375,268.16596875,268.43565625,98,3
+family,p03-ref,decaps,x86-64,measured,,427.895140625,427.69621875,428.056640625,98,3
+family,p03-avx2,keygen,x86-64-v3,measured,,1878.953,1875.31,1882.568,99,2
+family,p03-avx2,encaps,x86-64-v3,measured,,152.780546875,152.730328125,152.863,100,1
+family,p03-avx2,decaps,x86-64-v3,measured,,201.44690625,201.391515625,201.5516875,100,1
+family,p04-ref,keygen,x86-64,measured,,4648.099,4642.902,4657.134,99,2
+family,p04-ref,encaps,x86-64,measured,,696.2150625,696.0126875,696.385375,100,1
+family,p04-ref,decaps,x86-64,measured,,1023.4684375,1023.24259375,1023.74803125,95,6
+family,p04-avx2,keygen,x86-64-v3,measured,,3568.026,3566.258,3571.19,96,5
+family,p04-avx2,encaps,x86-64-v3,measured,,441.247734375,441.100265625,441.4251875,100,1
+family,p04-avx2,decaps,x86-64-v3,measured,,521.72325,521.60915625,521.89428125,97,4
+family,p05-ref,keygen,x86-64,measured,,2236.3915,2233.559,2243.607,100,1
+family,p05-ref,encaps,x86-64,measured,,301.32675,301.18978125,301.437625,101,0
+family,p05-ref,decaps,x86-64,measured,,460.7816875,460.65896875,460.9204375,97,4
+family,p05-avx2,keygen,x86-64-v3,measured,,1861.702,1860.086,1863.212,101,0
+family,p05-avx2,encaps,x86-64-v3,measured,,185.04746875,184.94796875,185.1446875,99,2
+family,p05-avx2,decaps,x86-64-v3,measured,,233.39021875,233.191703125,233.5860625,100,1
+family,p06-ref,keygen,x86-64,measured,,2376.4265,2368.728,2381.0145,100,1
+family,p06-ref,encaps,x86-64,measured,,301.20284375,301.1066875,301.36490625,101,0
+family,p06-ref,decaps,x86-64,measured,,460.671796875,460.58646875,460.773765625,96,5
+family,p06-avx2,keygen,x86-64-v3,measured,,1999.91,1998.309,2001.831,97,4
+family,p06-avx2,encaps,x86-64-v3,measured,,184.969640625,184.85915625,185.05753125,100,1
+family,p06-avx2,decaps,x86-64-v3,measured,,233.06759375,232.62296875,233.407625,97,4
+family,p07-ref,keygen,x86-64,measured,,4684.743,4665.08,4689.082,97,4
+family,p07-ref,encaps,x86-64,measured,,741.120171875,740.893,741.3533125,98,3
+family,p07-ref,decaps,x86-64,measured,,1066.890734375,1066.67725,1067.222203125,100,1
+family,p07-avx2,keygen,x86-64-v3,measured,,3630.365,3619.905,3642.269,99,2
+family,p07-avx2,encaps,x86-64-v3,measured,,484.458875,484.33434375,484.72659375,99,2
+family,p07-avx2,decaps,x86-64-v3,measured,,561.251078125,561.133875,561.34346875,98,3
+family,p08-ref,keygen,x86-64,measured,,4651.786,4648.41,4661.042,101,0
+family,p08-ref,encaps,x86-64,measured,,740.80875,740.58228125,741.1135,99,2
+family,p08-ref,decaps,x86-64,measured,,1064.078484375,1063.77196875,1064.346421875,98,3
+family,p08-avx2,keygen,x86-64-v3,measured,,3607.0755,3601.068,3615.913,100,1
+family,p08-avx2,encaps,x86-64-v3,measured,,483.3708125,483.1710625,483.53359375,99,2
+family,p08-avx2,decaps,x86-64-v3,measured,,559.5710625,559.50253125,559.664625,99,2
+family,p09-ref,keygen,x86-64,measured,,4605.953,4600.47,4617.949,97,4
+family,p09-ref,encaps,x86-64,measured,,740.819140625,740.6686875,740.983609375,98,3
+family,p09-ref,decaps,x86-64,measured,,1064.010375,1063.68340625,1064.2965625,99,2
+family,p09-avx2,keygen,x86-64-v3,measured,,3550.507,3547.322,3552.988,100,1
+family,p09-avx2,encaps,x86-64-v3,measured,,483.12728125,483.0198125,483.2375,101,0
+family,p09-avx2,decaps,x86-64-v3,measured,,559.6420625,559.5331875,559.78059375,101,0
+family,p10-ref,keygen,x86-64,measured,,4668.494,4650.249,4675.803,99,2
+family,p10-ref,encaps,x86-64,measured,,704.75790625,704.48765625,704.905,100,1
+family,p10-ref,decaps,x86-64,measured,,1036.300328125,1036.079234375,1036.506703125,98,3
+family,p10-avx2,keygen,x86-64-v3,measured,,3567.649,3564.01,3569.429,99,2
+family,p10-avx2,encaps,x86-64-v3,measured,,446.210234375,446.123625,446.3478125,100,1
+family,p10-avx2,decaps,x86-64-v3,measured,,526.77590625,526.68896875,526.86521875,96,5
+family,p11-ref,keygen,x86-64,measured,,2380.732,2377.54,2383.324,99,2
+family,p11-ref,encaps,x86-64,measured,,301.24471875,301.1860625,301.34,101,0
+family,p11-ref,decaps,x86-64,measured,,459.7485625,459.6201875,459.88778125,97,4
+family,p11-avx2,keygen,x86-64-v3,measured,,2003.691,1997.234,2007.713,101,0
+family,p11-avx2,encaps,x86-64-v3,measured,,185.54434375,185.476,185.61846875,100,1
+family,p11-avx2,decaps,x86-64-v3,measured,,234.05484375,234.007375,234.14740625,101,0
+family,p12-ref,keygen,x86-64,measured,,4913.83,4910.288,4915.8335,100,1
+family,p12-ref,encaps,x86-64,measured,,747.29209375,747.05221875,747.47809375,101,0
+family,p12-ref,decaps,x86-64,measured,,1074.1045,1073.96671875,1074.4873125,97,4
+family,p12-avx2,keygen,x86-64-v3,measured,,4034.41,4030.482,4039.471,99,2
+family,p12-avx2,encaps,x86-64-v3,measured,,486.59509375,486.50240625,486.73725,97,4
+family,p12-avx2,decaps,x86-64-v3,measured,,563.43115625,563.22496875,563.5384375,99,2
+family,p13-ref,keygen,x86-64,measured,,4894.446,4778.2995,4903.992,100,1
+family,p13-ref,encaps,x86-64,measured,,743.558796875,743.484609375,743.820484375,98,3
+family,p13-ref,decaps,x86-64,measured,,1065.767015625,1065.59190625,1066.021515625,94,7
+family,p13-avx2,keygen,x86-64-v3,measured,,3704.537,3685.873,3707.6755,100,1
+family,p13-avx2,encaps,x86-64-v3,measured,,487.717109375,487.6641875,487.781890625,100,1
+family,p13-avx2,decaps,x86-64-v3,measured,,564.198875,564.07875,564.299875,99,2
+family,p14-ref,keygen,x86-64,measured,,4608.497,4601.757,4614.139,97,4
+family,p14-ref,encaps,x86-64,measured,,740.841625,740.66921875,741.06303125,98,3
+family,p14-ref,decaps,x86-64,measured,,1063.8515,1063.59825,1064.14640625,97,4
+family,p14-avx2,keygen,x86-64-v3,measured,,3552.851,3549.36,3557.075,99,2
+family,p14-avx2,encaps,x86-64-v3,measured,,483.012484375,482.9293125,483.2096875,98,3
+family,p14-avx2,decaps,x86-64-v3,measured,,559.4845,559.382875,559.590375,99,2
+family,p15-ref,keygen,x86-64,measured,,5523.4425,5509.7815,5575.542,100,1
+family,p15-ref,encaps,x86-64,measured,,824.695984375,824.58215625,824.806078125,100,1
+family,p15-ref,decaps,x86-64,measured,,1148.90809375,1148.4210625,1149.21978125,99,2
+family,p15-avx2,keygen,x86-64-v3,measured,,4406.209,4403.88,4412.59,99,2
+family,p15-avx2,encaps,x86-64-v3,measured,,561.93740625,561.79403125,562.100125,99,2
+family,p15-avx2,decaps,x86-64-v3,measured,,635.021375,634.92559375,635.19534375,95,6
+family,p16-ref,keygen,x86-64,measured,,4601.489,4597.831,4608.79,99,2
+family,p16-ref,encaps,x86-64,measured,,740.876953125,740.6934375,741.16184375,98,3
+family,p16-ref,decaps,x86-64,measured,,1064.0203125,1063.60353125,1064.347375,95,6
+family,p16-avx2,keygen,x86-64-v3,measured,,3552.322,3549.014,3556.473,100,1
+family,p16-avx2,encaps,x86-64-v3,measured,,483.26325,483.028375,483.37271875,101,0
+family,p16-avx2,decaps,x86-64-v3,measured,,559.65528125,559.5514375,559.722515625,98,3
+family,bat512-ref,keygen,x86-64,measured,,19668.915,14325.761,24553.788,97,4
+family,bat512-ref,encaps,x86-64,measured,,47.01984375,46.97759375,47.1118125,101,0
+family,bat512-ref,decaps,x86-64,measured,,300.4015625,300.28525,300.4541875,98,3
+family,bat512-avx2,keygen,x86-64-v3,measured,,17832.227,16642.649,21404.566,100,1
+family,bat512-avx2,encaps,x86-64-v3,measured,,10.06084375,10.05040625,10.0700625,101,0
+family,bat512-avx2,decaps,x86-64-v3,measured,,56.61246875,56.58590625,56.65959375,101,0
+family,end512-ref,keygen,x86-64,measured,,9216.1225,8418.315,10016.721,100,1
+family,end512-ref,encaps,x86-64,measured,,28.9078125,28.79578125,28.987875,99,2
+family,end512-ref,decaps,x86-64,measured,,328.2303125,328.0783125,328.42453125,99,2
+family,end512-avx2,keygen,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end512-avx2,encaps,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end512-avx2,decaps,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,bat1024-ref,keygen,x86-64,measured,,106227.522,77951.843,135044.927,85,16
+family,bat1024-ref,encaps,x86-64,measured,,93.911375,93.84875,93.95040625,101,0
+family,bat1024-ref,decaps,x86-64,measured,,621.91378125,621.791265625,622.011890625,98,3
+family,bat1024-avx2,keygen,x86-64-v3,measured,,97193.241,83738.468,104319.25,88,13
+family,bat1024-avx2,encaps,x86-64-v3,measured,,21.24053125,21.22534375,21.269171875,100,1
+family,bat1024-avx2,decaps,x86-64-v3,measured,,116.492953125,116.43915625,116.555,100,1
+family,end1024-ref,keygen,x86-64,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end1024-ref,encaps,x86-64,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end1024-ref,decaps,x86-64,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end1024-avx2,keygen,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end1024-avx2,encaps,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,
+family,end1024-avx2,decaps,x86-64-v3,excluded,Shared-key preflight failed through the preserved-source adapter; no timing is ranked,,,,,

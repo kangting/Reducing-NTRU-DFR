@@ -1,0 +1,5 @@
+K_bits,M_bits,ct_bytes,id,label,n,number,pk_bytes,primary,q,row_type,source_ct_bytes,source_pk_bytes,total_bytes,u_bits
+256,256,384,END-512,END-512,512,,514,False,257,peer,384,514,898,
+,128,473,BAT-512,BAT-512,512,,521,False,257,peer,472,520,994,
+256,512,832,END-1024,END-1024,1024,,1027,False,257,peer,832,1027,1859,
+,256,1006,BAT-1024,BAT-1024,1024,,1230,False,769,peer,1005,1229,2236,

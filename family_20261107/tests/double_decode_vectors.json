@@ -1,0 +1,113 @@
+{
+  "status": "hand-authored static fixtures; not executed",
+  "purpose": "Correction-to-F2-residue helper only; no inverse or equal-halves check",
+  "layout": {
+    "n": [512, 1024],
+    "L": "n/4",
+    "entries": "[group,slot,signed_value] means centered[group+slot*L]; all unspecified values are zero",
+    "expected_set_bits": "[group,lane] means residue bit group+lane*L; lane is0 or1",
+    "invalid_output": "at least2 syndrome groups retain original folded parity; callers reject later"
+  },
+  "common_cases": [
+    {
+      "name": "all_zero",
+      "entries": [],
+      "syndrome_groups": [],
+      "correction": null,
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "zero_syndrome_odd_pair_is_not_corrected",
+      "entries": [[7, 0, 1], [7, 1, 1]],
+      "syndrome_groups": [],
+      "correction": null,
+      "valid": 1,
+      "expected_set_bits": [[7, 0], [7, 1]]
+    },
+    {
+      "name": "unique_max_opposite_position_folds_away",
+      "entries": [[9, 0, 1], [9, 1, 2], [9, 2, -6]],
+      "syndrome_groups": [9],
+      "correction": [9, 2],
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "unique_max_other_lane_leaves_both_residue_bits",
+      "entries": [[10, 0, 1], [10, 1, -8]],
+      "syndrome_groups": [10],
+      "correction": [10, 1],
+      "valid": 1,
+      "expected_set_bits": [[10, 0], [10, 1]]
+    },
+    {
+      "name": "tie_includes_slot0_first_index_wins",
+      "entries": [[11, 0, 5], [11, 1, -5], [11, 2, 4], [11, 3, 3]],
+      "syndrome_groups": [11],
+      "correction": [11, 0],
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "tie_starts_at_slot1_first_index_wins",
+      "entries": [[12, 0, 1], [12, 1, -7], [12, 2, 7]],
+      "syndrome_groups": [12],
+      "correction": [12, 1],
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "int16_min_magnitude_is32768",
+      "entries": [[13, 0, -32768], [13, 1, 1]],
+      "syndrome_groups": [13],
+      "correction": [13, 0],
+      "valid": 1,
+      "expected_set_bits": [[13, 0], [13, 1]]
+    },
+    {
+      "name": "single_odd_slot1_is_corrected",
+      "entries": [[14, 1, 1]],
+      "syndrome_groups": [14],
+      "correction": [14, 1],
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "three_way_signed_tie",
+      "entries": [[15, 0, -32767], [15, 1, 32767], [15, 2, -32767]],
+      "syndrome_groups": [15],
+      "correction": [15, 0],
+      "valid": 1,
+      "expected_set_bits": [[15, 0], [15, 1]]
+    },
+    {
+      "name": "two_syndrome_groups_reject_without_correction",
+      "entries": [[8, 0, 1], [21, 1, 3]],
+      "syndrome_groups": [8, 21],
+      "correction": null,
+      "valid": 0,
+      "expected_set_bits": [[8, 0], [21, 1]]
+    }
+  ],
+  "dimension_cases": [
+    {
+      "name": "last_coefficient_n512",
+      "n": 512,
+      "entries": [[127, 3, -3]],
+      "syndrome_groups": [127],
+      "correction": [127, 3],
+      "valid": 1,
+      "expected_set_bits": []
+    },
+    {
+      "name": "last_coefficient_n1024",
+      "n": 1024,
+      "entries": [[255, 3, -3]],
+      "syndrome_groups": [255],
+      "correction": [255, 3],
+      "valid": 1,
+      "expected_set_bits": []
+    }
+  ]
+}

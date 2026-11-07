@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1165" height="544" viewBox="0 0 1165 544">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Serif,serif">
+<text x="582.5" y="31" font-size="21" font-weight="normal" text-anchor="middle" fill="#111111">Published comparator metadata (separate evidence models)</text>
+<line x1="30" y1="64" x2="1135" y2="64" stroke="#111111" stroke-width="2"/>
+<text x="175.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Scheme</text>
+<text x="398.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">M/u/K</text>
+<text x="398.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bits)</text>
+<text x="542.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Source CT</text>
+<text x="542.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="674.0" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Source PK</text>
+<text x="674.0" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(bytes)</text>
+<text x="802.5" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">C reported</text>
+<text x="927.5" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Q reported</text>
+<text x="1062.5" y="83" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">DFR exp.</text>
+<text x="1062.5" y="101" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(reported)</text>
+<line x1="30" y1="112" x2="1135" y2="112" stroke="#111111" stroke-width="1.6"/>
+<text x="40" y="136" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">DAWN-alpha-512</text>
+<text x="398.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">128/128/—</text>
+<text x="542.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">436</text>
+<text x="674.0" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">615</text>
+<text x="802.5" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">139.50</text>
+<text x="927.5" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">133.50</text>
+<text x="1062.5" y="136" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">133.00</text>
+<line x1="30" y1="149" x2="1135" y2="149" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="173" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">DAWN-alpha-512-prime</text>
+<text x="398.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/256</text>
+<text x="542.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">514</text>
+<text x="674.0" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">615</text>
+<text x="802.5" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">140.00</text>
+<text x="927.5" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">—</text>
+<text x="1062.5" y="173" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">166.00</text>
+<line x1="30" y1="186" x2="1135" y2="186" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="210" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">DAWN-alpha-1024</text>
+<text x="398.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/—</text>
+<text x="542.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">973</text>
+<text x="674.0" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1229</text>
+<text x="802.5" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">269.90</text>
+<text x="927.5" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">250.80</text>
+<text x="1062.5" y="210" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">163.00</text>
+<line x1="30" y1="223" x2="1135" y2="223" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="247" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">BAT-512</text>
+<text x="398.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">128/—/—</text>
+<text x="542.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">472</text>
+<text x="674.0" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">520</text>
+<text x="802.5" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">140.30</text>
+<text x="927.5" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">124.70</text>
+<text x="1062.5" y="247" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">146.70</text>
+<line x1="30" y1="260" x2="1135" y2="260" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="284" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">BAT-1024</text>
+<text x="398.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/—/—</text>
+<text x="542.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1005</text>
+<text x="674.0" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1229</text>
+<text x="802.5" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">283.20</text>
+<text x="927.5" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">250.60</text>
+<text x="1062.5" y="284" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">166.70</text>
+<line x1="30" y1="297" x2="1135" y2="297" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="321" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">END-512</text>
+<text x="398.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/—/256</text>
+<text x="542.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">384</text>
+<text x="674.0" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">514</text>
+<text x="802.5" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">152.70</text>
+<text x="927.5" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">—</text>
+<text x="1062.5" y="321" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">130.00</text>
+<line x1="30" y1="334" x2="1135" y2="334" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="358" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">END-1024</text>
+<text x="398.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">512/—/256</text>
+<text x="542.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">832</text>
+<text x="674.0" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1027</text>
+<text x="802.5" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">287.10</text>
+<text x="927.5" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">—</text>
+<text x="1062.5" y="358" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">157.00</text>
+<line x1="30" y1="371" x2="1135" y2="371" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="395" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">DAWN-beta-512</text>
+<text x="398.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">128/128/—</text>
+<text x="542.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">450</text>
+<text x="674.0" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">514</text>
+<text x="802.5" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">134.30</text>
+<text x="927.5" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">134.10</text>
+<text x="1062.5" y="395" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">130.00</text>
+<line x1="30" y1="408" x2="1135" y2="408" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="432" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">DAWN-beta-1024</text>
+<text x="398.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">256/256/—</text>
+<text x="542.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1027</text>
+<text x="674.0" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1027</text>
+<text x="802.5" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">266.50</text>
+<text x="927.5" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">251.20</text>
+<text x="1062.5" y="432" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">138.00</text>
+<line x1="30" y1="445" x2="1135" y2="445" stroke="#111111" stroke-width="2"/>
+<line x1="30" y1="64" x2="30" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="320" y1="64" x2="320" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="476" y1="64" x2="476" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="608" y1="64" x2="608" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="740" y1="64" x2="740" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="865" y1="64" x2="865" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="990" y1="64" x2="990" y2="445" stroke="#111111" stroke-width="0.55"/>
+<line x1="1135" y1="64" x2="1135" y2="445" stroke="#111111" stroke-width="0.55"/>
+<text x="30" y="468" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">Source-only sizes and model/DFR statements; no illustration timing is used.</text>
+<text x="30" y="489" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">Published C/Q and DFR statements use heterogeneous models and must not be ranked as a common security scale.</text>
+<text x="30" y="510" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">Exact attribution, relations, qualifications and URLs are retained in metadata JSON/CSV and Markdown.</text>
+</g>
+</svg>

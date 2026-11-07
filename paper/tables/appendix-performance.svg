@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1586" height="1168" viewBox="0 0 1586 1168">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Serif,serif">
+<text x="793.0" y="31" font-size="21" font-weight="normal" text-anchor="middle" fill="#111111">Appendix: all16 family REF / AVX2 results</text>
+<line x1="30" y1="64" x2="1556" y2="64" stroke="#111111" stroke-width="2"/>
+<text x="629.0" y="84" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">REF (kcycles)</text>
+<line x1="324" y1="93" x2="934" y2="93" stroke="#111111" stroke-width="1"/>
+<text x="1247.0" y="84" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">AVX2 (kcycles)</text>
+<line x1="942" y1="93" x2="1552" y2="93" stroke="#111111" stroke-width="1"/>
+<text x="175.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Scheme</text>
+<text x="423.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">KeyGen</text>
+<text x="629.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Encaps</text>
+<text x="835.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Decaps</text>
+<text x="1041.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">KeyGen</text>
+<text x="1247.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Encaps</text>
+<text x="1453.0" y="112" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Decaps</text>
+<line x1="30" y1="141" x2="1556" y2="141" stroke="#111111" stroke-width="1.6"/>
+<text x="40" y="165" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">S512-q251</text>
+<text x="423.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">2,222.412</text>
+<text x="423.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[2,220.931, 2,229.777]</text>
+<text x="629.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">300.676</text>
+<text x="629.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[300.543, 300.744]</text>
+<text x="835.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">460.114</text>
+<text x="835.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[459.999, 460.254]</text>
+<text x="1041.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1,843.785</text>
+<text x="1041.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,841.390, 1,845.584]</text>
+<text x="1247.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">184.417</text>
+<text x="1247.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[184.247, 184.541]</text>
+<text x="1453.0" y="164" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">232.698</text>
+<text x="1453.0" y="183" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[232.421, 232.929]</text>
+<line x1="30" y1="199" x2="1556" y2="199" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="223" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">S1024-q347</text>
+<text x="423.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">4,917.572</text>
+<text x="423.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,913.513, 4,920.746]</text>
+<text x="629.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">741.887</text>
+<text x="629.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[741.716, 741.972]</text>
+<text x="835.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1,065.250</text>
+<text x="835.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,065.098, 1,065.653]</text>
+<text x="1041.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">3,861.338</text>
+<text x="1041.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,859.300, 3,865.328]</text>
+<text x="1247.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">484.334</text>
+<text x="1247.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[484.092, 484.443]</text>
+<text x="1453.0" y="222" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">560.771</text>
+<text x="1453.0" y="241" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[560.662, 560.828]</text>
+<line x1="30" y1="257" x2="1556" y2="257" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="281" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">D512-q157</text>
+<text x="423.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">2,260.666</text>
+<text x="423.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[2,257.419, 2,264.095]</text>
+<text x="629.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">268.340</text>
+<text x="629.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[268.166, 268.436]</text>
+<text x="835.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">427.895</text>
+<text x="835.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[427.696, 428.057]</text>
+<text x="1041.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1,878.953</text>
+<text x="1041.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,875.310, 1,882.568]</text>
+<text x="1247.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">152.781</text>
+<text x="1247.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[152.730, 152.863]</text>
+<text x="1453.0" y="280" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">201.447</text>
+<text x="1453.0" y="299" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[201.392, 201.552]</text>
+<line x1="30" y1="315" x2="1556" y2="315" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="339" font-size="17" font-weight="bold" text-anchor="start" fill="#111111">D1024-q251</text>
+<text x="423.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">4,648.099</text>
+<text x="423.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,642.902, 4,657.134]</text>
+<text x="629.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">696.215</text>
+<text x="629.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[696.013, 696.385]</text>
+<text x="835.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">1,023.468</text>
+<text x="835.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,023.243, 1,023.748]</text>
+<text x="1041.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">3,568.026</text>
+<text x="1041.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,566.258, 3,571.190]</text>
+<text x="1247.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">441.248</text>
+<text x="1247.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[441.100, 441.425]</text>
+<text x="1453.0" y="338" font-size="17" font-weight="bold" text-anchor="middle" fill="#111111">521.723</text>
+<text x="1453.0" y="357" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[521.609, 521.894]</text>
+<line x1="30" y1="373" x2="1556" y2="373" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="397" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q251 C139.5</text>
+<text x="423.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2,236.392</text>
+<text x="423.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[2,233.559, 2,243.607]</text>
+<text x="629.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">301.327</text>
+<text x="629.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[301.190, 301.438]</text>
+<text x="835.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">460.782</text>
+<text x="835.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[460.659, 460.920]</text>
+<text x="1041.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,861.702</text>
+<text x="1041.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,860.086, 1,863.212]</text>
+<text x="1247.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">185.047</text>
+<text x="1247.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[184.948, 185.145]</text>
+<text x="1453.0" y="396" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">233.390</text>
+<text x="1453.0" y="415" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[233.192, 233.586]</text>
+<line x1="30" y1="431" x2="1556" y2="431" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="455" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q251 den128</text>
+<text x="423.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2,376.427</text>
+<text x="423.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[2,368.728, 2,381.015]</text>
+<text x="629.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">301.203</text>
+<text x="629.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[301.107, 301.365]</text>
+<text x="835.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">460.672</text>
+<text x="835.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[460.586, 460.774]</text>
+<text x="1041.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,999.910</text>
+<text x="1041.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,998.309, 2,001.831]</text>
+<text x="1247.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">184.970</text>
+<text x="1247.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[184.859, 185.058]</text>
+<text x="1453.0" y="454" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">233.068</text>
+<text x="1453.0" y="473" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[232.623, 233.408]</text>
+<line x1="30" y1="489" x2="1556" y2="489" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="513" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q349</text>
+<text x="423.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,684.743</text>
+<text x="423.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,665.080, 4,689.082]</text>
+<text x="629.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">741.120</text>
+<text x="629.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[740.893, 741.353]</text>
+<text x="835.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,066.891</text>
+<text x="835.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,066.677, 1,067.222]</text>
+<text x="1041.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,630.365</text>
+<text x="1041.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,619.905, 3,642.269]</text>
+<text x="1247.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">484.459</text>
+<text x="1247.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[484.334, 484.727]</text>
+<text x="1453.0" y="512" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">561.251</text>
+<text x="1453.0" y="531" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[561.134, 561.343]</text>
+<line x1="30" y1="547" x2="1556" y2="547" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="571" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 den256</text>
+<text x="423.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,651.786</text>
+<text x="423.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,648.410, 4,661.042]</text>
+<text x="629.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">740.809</text>
+<text x="629.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[740.582, 741.114]</text>
+<text x="835.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,064.078</text>
+<text x="835.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,063.772, 1,064.346]</text>
+<text x="1041.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,607.075</text>
+<text x="1041.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,601.068, 3,615.913]</text>
+<text x="1247.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">483.371</text>
+<text x="1247.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[483.171, 483.534]</text>
+<text x="1453.0" y="570" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">559.571</text>
+<text x="1453.0" y="589" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[559.503, 559.665]</text>
+<line x1="30" y1="605" x2="1556" y2="605" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="629" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 den512</text>
+<text x="423.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,605.953</text>
+<text x="423.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,600.470, 4,617.949]</text>
+<text x="629.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">740.819</text>
+<text x="629.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[740.669, 740.984]</text>
+<text x="835.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,064.010</text>
+<text x="835.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,063.683, 1,064.297]</text>
+<text x="1041.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,550.507</text>
+<text x="1041.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,547.322, 3,552.988]</text>
+<text x="1247.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">483.127</text>
+<text x="1247.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[483.020, 483.238]</text>
+<text x="1453.0" y="628" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">559.642</text>
+<text x="1453.0" y="647" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[559.533, 559.781]</text>
+<line x1="30" y1="663" x2="1556" y2="663" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="687" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">D1024-q269</text>
+<text x="423.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,668.494</text>
+<text x="423.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,650.249, 4,675.803]</text>
+<text x="629.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">704.758</text>
+<text x="629.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[704.488, 704.905]</text>
+<text x="835.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,036.300</text>
+<text x="835.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,036.079, 1,036.507]</text>
+<text x="1041.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,567.649</text>
+<text x="1041.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,564.010, 3,569.429]</text>
+<text x="1247.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">446.210</text>
+<text x="1247.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[446.124, 446.348]</text>
+<text x="1453.0" y="686" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">526.776</text>
+<text x="1453.0" y="705" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[526.689, 526.865]</text>
+<line x1="30" y1="721" x2="1556" y2="721" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="745" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S512-q269 BAT M128</text>
+<text x="423.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2,380.732</text>
+<text x="423.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[2,377.540, 2,383.324]</text>
+<text x="629.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">301.245</text>
+<text x="629.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[301.186, 301.340]</text>
+<text x="835.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">459.749</text>
+<text x="835.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[459.620, 459.888]</text>
+<text x="1041.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">2,003.691</text>
+<text x="1041.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,997.234, 2,007.713]</text>
+<text x="1247.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">185.544</text>
+<text x="1247.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[185.476, 185.618]</text>
+<text x="1453.0" y="744" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">234.055</text>
+<text x="1453.0" y="763" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[234.007, 234.147]</text>
+<line x1="30" y1="779" x2="1556" y2="779" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="803" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q373 BAT</text>
+<text x="423.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,913.830</text>
+<text x="423.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,910.288, 4,915.833]</text>
+<text x="629.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">747.292</text>
+<text x="629.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[747.052, 747.478]</text>
+<text x="835.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,074.104</text>
+<text x="835.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,073.967, 1,074.487]</text>
+<text x="1041.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,034.410</text>
+<text x="1041.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,030.482, 4,039.471]</text>
+<text x="1247.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">486.595</text>
+<text x="1247.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[486.502, 486.737]</text>
+<text x="1453.0" y="802" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">563.431</text>
+<text x="1453.0" y="821" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[563.225, 563.538]</text>
+<line x1="30" y1="837" x2="1556" y2="837" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="861" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q379 DFR256</text>
+<text x="423.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,894.446</text>
+<text x="423.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,778.300, 4,903.992]</text>
+<text x="629.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">743.559</text>
+<text x="629.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[743.485, 743.820]</text>
+<text x="835.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,065.767</text>
+<text x="835.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,065.592, 1,066.022]</text>
+<text x="1041.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,704.537</text>
+<text x="1041.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,685.873, 3,707.675]</text>
+<text x="1247.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">487.717</text>
+<text x="1247.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[487.664, 487.782]</text>
+<text x="1453.0" y="860" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">564.199</text>
+<text x="1453.0" y="879" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[564.079, 564.300]</text>
+<line x1="30" y1="895" x2="1556" y2="895" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="919" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 DFR256</text>
+<text x="423.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,608.497</text>
+<text x="423.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,601.757, 4,614.139]</text>
+<text x="629.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">740.842</text>
+<text x="629.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[740.669, 741.063]</text>
+<text x="835.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,063.851</text>
+<text x="835.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,063.598, 1,064.146]</text>
+<text x="1041.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,552.851</text>
+<text x="1041.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,549.360, 3,557.075]</text>
+<text x="1247.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">483.012</text>
+<text x="1247.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[482.929, 483.210]</text>
+<text x="1453.0" y="918" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">559.485</text>
+<text x="1453.0" y="937" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[559.383, 559.590]</text>
+<line x1="30" y1="953" x2="1556" y2="953" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="977" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q541 DFR256</text>
+<text x="423.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">5,523.443</text>
+<text x="423.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[5,509.782, 5,575.542]</text>
+<text x="629.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">824.696</text>
+<text x="629.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[824.582, 824.806]</text>
+<text x="835.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,148.908</text>
+<text x="835.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,148.421, 1,149.220]</text>
+<text x="1041.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,406.209</text>
+<text x="1041.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,403.880, 4,412.590]</text>
+<text x="1247.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">561.937</text>
+<text x="1247.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[561.794, 562.100]</text>
+<text x="1453.0" y="976" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">635.021</text>
+<text x="1453.0" y="995" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[634.926, 635.195]</text>
+<line x1="30" y1="1011" x2="1556" y2="1011" stroke="#111111" stroke-width="0.5"/>
+<text x="40" y="1035" font-size="17" font-weight="normal" text-anchor="start" fill="#111111">S1024-q347 C198.7</text>
+<text x="423.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">4,601.489</text>
+<text x="423.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[4,597.831, 4,608.790]</text>
+<text x="629.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">740.877</text>
+<text x="629.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[740.693, 741.162]</text>
+<text x="835.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">1,064.020</text>
+<text x="835.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[1,063.604, 1,064.347]</text>
+<text x="1041.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">3,552.322</text>
+<text x="1041.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[3,549.014, 3,556.473]</text>
+<text x="1247.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">483.263</text>
+<text x="1247.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[483.028, 483.373]</text>
+<text x="1453.0" y="1034" font-size="17" font-weight="normal" text-anchor="middle" fill="#111111">559.655</text>
+<text x="1453.0" y="1053" font-size="12" font-weight="normal" text-anchor="middle" fill="#4b4b4b">[559.551, 559.723]</text>
+<line x1="30" y1="1069" x2="1556" y2="1069" stroke="#111111" stroke-width="2"/>
+<line x1="30" y1="64" x2="30" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="320" y1="64" x2="320" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="526" y1="64" x2="526" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="732" y1="64" x2="732" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="938" y1="64" x2="938" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="1144" y1="64" x2="1144" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="1350" y1="64" x2="1350" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<line x1="1556" y1="64" x2="1556" y2="1069" stroke="#111111" stroke-width="0.55"/>
+<text x="30" y="1092" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">Median of accepted batch means; brackets give the prespecified bootstrap 95% interval.</text>
+<text x="30" y="1113" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">1 kcycle = 1000 raw hardware CPU cycles. Counter-read overhead is retained, not subtracted.</text>
+<text x="30" y="1134" font-size="12" font-weight="normal" text-anchor="start" fill="#333333">Blank performance cells are correctness exclusions, never zero costs. Batch counts are retained in CSV.</text>
+</g>
+</svg>

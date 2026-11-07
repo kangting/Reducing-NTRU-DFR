@@ -1,0 +1,35 @@
+{
+  "maximum_n": 1024,
+  "maximum_transform_length": 2048,
+  "original_helper_input_bound": 372,
+  "centered_input_bound": 186,
+  "maximum_absolute_centered_coefficient": 35426304,
+  "crt_modulus": 226523137,
+  "crt_inverse": 3,
+  "primes": [
+    {
+      "p": 998244353,
+      "generator": 3,
+      "montgomery_bits": 32,
+      "negative_inverse": 998244351,
+      "r2": 932051910,
+      "root2048": 584193783
+    },
+    {
+      "p": 12289,
+      "generator": 11,
+      "montgomery_bits": 16,
+      "negative_inverse": 12287,
+      "r2": 10952,
+      "root2048": 1945
+    },
+    {
+      "p": 18433,
+      "generator": 5,
+      "montgomery_bits": 16,
+      "negative_inverse": 18431,
+      "r2": 4564,
+      "root2048": 17660
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+% Requires booktabs and graphicx.
+\begin{table*}[t]
+\centering
+\caption{Matched peer API wire sizes}
+\label{tab:matched-peer-sizes}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Scheme & \shortstack{M/u/K\\(bits)} & \shortstack{API CT\\(bytes)} & \shortstack{API PK\\(bytes)} & \shortstack{API total\\(bytes)} & \shortstack{Source CT\\(bytes)} & \shortstack{Source PK\\(bytes)} \\
+\midrule
+END-512 & 256/---/256 & 384 & 514 & 898 & 384 & 514 \\
+BAT-512 & 128/---/--- & 473 & 521 & 994 & 472 & 520 \\
+END-1024 & 512/---/256 & 832 & 1027 & 1859 & 832 & 1027 \\
+BAT-1024 & 256/---/--- & 1006 & 1230 & 2236 & 1005 & 1229 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+API sizes come from the matched build descriptors; source sizes retain the archive convention.\par
+BAT API keys and ciphertexts include one-byte headers beyond the header-free source metadata.\par
+--- means the source does not specify that length; message length does not imply shared-key length.\par
+\end{minipage}
+\end{table*}

@@ -1,0 +1,34 @@
+% Requires booktabs and graphicx.
+\begin{table*}[t]
+\centering
+\caption{Appendix: all16 selected family profiles}
+\label{tab:appendix-parameters}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Scheme & \shortstack{M/u/K\\(bits)} & \shortstack{CT\\(bytes)} & \shortstack{PK\\(bytes)} & \shortstack{CT+PK\\(bytes)} & C diag. & Q diag. & b $\approx$ \\
+\midrule
+\textbf{S512-q251} & 256/256/256 & 543 & 511 & 1054 & 140.05 & 134.56 & 166.15 \\
+\textbf{S1024-q347} & 256/512/256 & 1113 & 1081 & 2194 & 270.07 & 251.59 & 163.38 \\
+\textbf{D512-q157} & 128/128/256 & 483 & 467 & 950 & 144.39 & 138.45 & 133.38 \\
+\textbf{D1024-q251} & 256/256/256 & 1053 & 1021 & 2074 & 278.68 & 259.33 & 166.86 \\
+S512-q251 C139.5 & 256/256/256 & 543 & 511 & 1054 & 139.54 & 134.10 & 169.66 \\
+S512-q251 den128 & 256/256/256 & 543 & 511 & 1054 & 140.07 & 134.58 & 166.02 \\
+S1024-q349 & 256/512/256 & 1114 & 1082 & 2196 & 270.02 & 251.55 & 164.87 \\
+S1024-q347 den256 & 256/512/256 & 1113 & 1081 & 2194 & 270.02 & 251.54 & 163.66 \\
+S1024-q347 den512 & 256/512/256 & 1113 & 1081 & 2194 & 270.02 & 251.54 & 163.70 \\
+D1024-q269 & 256/256/256 & 1066 & 1034 & 2100 & 276.76 & 257.61 & 177.89 \\
+S512-q269 BAT M128 & 128/256/256 & 533 & 517 & 1050 & 144.01 & 138.13 & 149.20 \\
+S1024-q373 BAT & 256/512/256 & 1126 & 1094 & 2220 & 272.02 & 253.35 & 170.66 \\
+S1024-q379 DFR256 & 256/512/256 & 1129 & 1097 & 2226 & 246.28 & 230.19 & 262.55 \\
+S1024-q347 DFR256 & 256/512/256 & 1113 & 1081 & 2194 & 192.29 & 181.59 & 271.09 \\
+S1024-q541 DFR256 & 256/512/256 & 1195 & 1163 & 2358 & 269.91 & 251.46 & 257.15 \\
+S1024-q347 C198.7 & 256/512/256 & 1113 & 1081 & 2194 & 199.07 & 187.70 & 269.42 \\
+\bottomrule
+\end{tabular}}
+\begin{minipage}{\textwidth}\footnotesize
+M/u/K are external message / internal residue / shared-key output lengths in bits.\par
+C/Q are supplied structural GSA/MATZOV diagnostics; b is approximate -log2(B), not a rounded strict inequality.\par
+These columns are not a full KEM security claim or a NIST certificate. No compression denominator is assigned.\par
+\end{minipage}
+\end{table*}

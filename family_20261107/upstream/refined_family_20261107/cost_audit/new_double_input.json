@@ -1,0 +1,184 @@
+[
+  {
+    "id": "D512_q157_same_law_correction_on",
+    "n": 512,
+    "q": 157,
+    "mode": "double",
+    "external_message_bits": 128,
+    "internal_message_bits": 128,
+    "shared_key_bits": 256,
+    "den": 256,
+    "counts": [
+      [
+        128,
+        5,
+        123
+      ],
+      [
+        128,
+        60,
+        68
+      ],
+      [
+        128,
+        60,
+        68
+      ]
+    ],
+    "laws": [
+      [
+        "1/2",
+        "5/256",
+        "123/256"
+      ],
+      [
+        "1/2",
+        "15/64",
+        "17/64"
+      ],
+      [
+        "1/2",
+        "15/64",
+        "17/64"
+      ],
+      [
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    ],
+    "targets": {
+      "classical": 140,
+      "quantum": 133.5,
+      "dfr": 133
+    },
+    "certificate": {
+      "n": 512,
+      "q": 211,
+      "internal_message_bits": 128,
+      "message_law": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "accepted_key_average_zero_wrap_bound_exponent": 137.70179019319812,
+      "target": 133,
+      "exact_integer_inequality_passes": true,
+      "acceptance_probability": 0.4969524688482734,
+      "certificate_method": "17-atom enumeration; exact integer one-coordinate convolution;2n union bound; exact acceptance correction",
+      "correction_benefit_used": false,
+      "external_message_bits": 128,
+      "shared_key_bits": 256,
+      "mask_bytes": 16,
+      "public_key_bytes": 495,
+      "ciphertext_bytes": 511,
+      "sum_bytes": 1006
+    },
+    "bound_exponent": 137.70179019319812,
+    "minima": {
+      "classical": 140.05457838937312,
+      "quantum": 134.56191609441757
+    },
+    "public_key_bytes": 495,
+    "ciphertext_bytes": 511,
+    "sum_bytes": 1006,
+    "status": "experimental W-code; additional message-distribution security analysis required",
+    "wire_sizes": {
+      "public_key_bytes": 467,
+      "ciphertext_bytes": 483,
+      "total_bytes": 950,
+      "external_M": 128
+    }
+  },
+  {
+    "id": "D1024_q269_same_law_correction_on",
+    "n": 1024,
+    "q": 269,
+    "mode": "double",
+    "external_message_bits": 256,
+    "internal_message_bits": 256,
+    "shared_key_bits": 256,
+    "den": 256,
+    "counts": [
+      [
+        128,
+        3,
+        125
+      ],
+      [
+        128,
+        17,
+        111
+      ],
+      [
+        128,
+        17,
+        111
+      ]
+    ],
+    "laws": [
+      [
+        "1/2",
+        "3/256",
+        "125/256"
+      ],
+      [
+        "1/2",
+        "17/256",
+        "111/256"
+      ],
+      [
+        "1/2",
+        "17/256",
+        "111/256"
+      ],
+      [
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    ],
+    "targets": {
+      "classical": 269.9,
+      "quantum": 250.8,
+      "dfr": 163
+    },
+    "certificate": {
+      "n": 1024,
+      "q": 347,
+      "internal_message_bits": 256,
+      "message_law": [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      "accepted_key_average_zero_wrap_bound_exponent": 172.38622767857578,
+      "target": 163,
+      "exact_integer_inequality_passes": true,
+      "acceptance_probability": 0.4988460656419189,
+      "certificate_method": "17-atom enumeration; exact integer one-coordinate convolution;2n union bound; exact acceptance correction",
+      "correction_benefit_used": false,
+      "external_message_bits": 256,
+      "shared_key_bits": 256,
+      "mask_bytes": 32,
+      "public_key_bytes": 1081,
+      "ciphertext_bytes": 1113,
+      "sum_bytes": 2194
+    },
+    "bound_exponent": 172.38622767857578,
+    "minima": {
+      "classical": 270.08505216876586,
+      "quantum": 251.60912470669115
+    },
+    "public_key_bytes": 1081,
+    "ciphertext_bytes": 1113,
+    "sum_bytes": 2194,
+    "status": "experimental W-code; additional message-distribution security analysis required",
+    "wire_sizes": {
+      "public_key_bytes": 1034,
+      "ciphertext_bytes": 1066,
+      "total_bytes": 2100,
+      "external_M": 256
+    }
+  }
+]
