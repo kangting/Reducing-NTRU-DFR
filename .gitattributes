@@ -1,5 +1,5 @@
-# Preserve imported implementation/research bytes; CSVs are portable text.
+# Keep imported author/research bytes and use portable CSV line endings.
 benchmarks/vendor/** -text -whitespace
-family_20261107/upstream/** -text -whitespace
+experiments/parameter_selection/** -text -whitespace
 *.csv text eol=lf
 *.gz binary

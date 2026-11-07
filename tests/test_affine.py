@@ -3,6 +3,7 @@ from fractions import Fraction
 import json
 from math import comb
 from pathlib import Path
+import ntru
 import unittest
 
 import numpy as np
@@ -11,7 +12,7 @@ from experiments.affine import MONOMIALS, ZERO, evaluate, model
 from ntru import poly
 
 
-PARAMS = Path(__file__).resolve().parents[1] / 'ntru' / 'par.json'
+PARAMS = Path(ntru.__file__).with_name('par.json')
 
 
 class AffineTests(unittest.TestCase):

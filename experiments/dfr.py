@@ -5,6 +5,7 @@ import math
 from collections import defaultdict
 from fractions import Fraction
 from pathlib import Path
+import ntru
 
 
 def rotate(a):
@@ -85,12 +86,12 @@ def run(path):
     print(f'Internal average error <= 2^-129; bound exponent {exponent:.10f}')
     print(f'Public key / base polynomial: {size} / {size} bytes')
     print(f'Paper KEM format with 32-byte mask: {size} / {size+32} bytes; '
-          f'total {2*size+32} bytes (KEM implementation: ntru/kem.py; functional tests: tests/test_kem.py)')
+          f'total {2*size+32} bytes (KEM implementation: implementations/python/ntru/kem.py; functional tests: tests/test_kem.py)')
     return bound
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('params', nargs='?',
-                        default=Path(__file__).resolve().parents[1] / 'ntru' / 'par.json')
+                        default=Path(ntru.__file__).with_name('par.json'))
     run(parser.parse_args().params)

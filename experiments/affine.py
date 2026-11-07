@@ -9,6 +9,7 @@ from itertools import permutations
 import json
 from math import e, exp, log, pi, prod, sqrt
 from pathlib import Path
+import ntru
 
 
 ZERO = (0, 0, 0, 0)
@@ -161,7 +162,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out', type=Path, help='write the complete result as JSON')
     args = parser.parse_args()
-    params = Path(__file__).resolve().parents[1] / 'ntru' / 'par.json'
+    params = Path(ntru.__file__).with_name('par.json')
     output = evaluate(json.loads(params.read_text()))
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)

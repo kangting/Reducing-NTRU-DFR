@@ -5,6 +5,7 @@ one-odd-block key-recovery model is evaluated separately by affine.py.
 """
 from math import e, exp, log, pi, sqrt
 from pathlib import Path
+import ntru
 import json
 import numpy as np
 
@@ -46,7 +47,7 @@ def estimate(first, second, embedded):
 
 
 if __name__ == "__main__":
-    data = json.loads((Path(__file__).resolve().parents[1] / "ntru" / "par.json").read_text())
+    data = json.loads((Path(ntru.__file__).with_name('par.json')).read_text())
     assert data["n"] == 512 and data["q"] == 211
     for whiten in (False, True):
         v = block_variances(data["tables"], whiten)
