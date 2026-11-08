@@ -1,5 +1,30 @@
 # Mathematical experiments
 
+## Paper revision calculations
+
+The [version 1.0.0 revision companion](paper_revision/README.md) reproduces
+main Table III and Section VI-B, supplementary Table VI, the Appendix C
+J-off/correction-off bounds, and Appendix D-C rank checks. It contains its own
+inputs, pinned dependency, expected JSON outputs and paper-value comparison.
+Use its separate environment:
+
+```sh
+cd experiments/paper_revision
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+python verify.py --out rerun
+```
+
+These are later mathematical calculations. Their citation is separate from the
+[original implementation/PMU baseline](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
+No new BKZ recovery experiment or CPU-cycle measurement is performed by this
+companion. Existing performance records remain under `results/` and are analyzed
+with `benchmarks/analyze.py`. See the companion README for the paper-to-script map
+and immutable references to the historical parameter-selection calculations.
+
+## Original construction and parameter calculations
+
 Install with `python -m pip install -e .`, then run from the repository root.
 Use the activated environment's Python for NumPy/SciPy dependencies.
 

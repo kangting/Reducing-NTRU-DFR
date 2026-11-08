@@ -1,0 +1,21 @@
+NTRU revision audit 1.0.0
+Python 3.12.14, NumPy 2.3.5
+Manifest: PASS
+security_audit.py: PASS (security_results.json matches expected output)
+rank_check.py: PASS (rank_check.json matches expected output)
+ablation_check.py: PASS (ablation_check.json matches expected output)
+Table III S512: PASS (covariance_g_f, covariance_r_m, affine_r)
+Table III S1024: PASS (covariance_g_f, covariance_r_m, affine_r)
+Table III D512: PASS (covariance_g_f, covariance_r_m, factor_bm_r_cov, affine_g)
+Table III D1024: PASS (covariance_g_f, covariance_r_m, factor_bm_r_cov, affine_g)
+Table VI S512/both_one_monomial_g_first: PASS
+Table VI S1024/both_one_monomial_g_first: PASS
+Table VI D512/both_one_monomial_g_first: PASS
+Table VI D1024/both_one_monomial_g_first: PASS
+Table VI D512/factor_even_r: PASS
+Table VI D512/factor_affine_r: PASS
+Table VI D1024/factor_even_r: PASS
+Table VI D1024/factor_affine_r: PASS
+Appendix C: PASS (reported exponents and exact certificate fields)
+Appendix D-C: PASS (rank checks and exception exponents)
+All revision audit checks passed.

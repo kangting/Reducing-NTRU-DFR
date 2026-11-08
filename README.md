@@ -6,6 +6,13 @@ Implementations, mathematical experiments and measured results for the paper.
 **[Performance data (CSV)](results/summary/performance.csv)** ·
 **[Reproduction guide](benchmarks/README.md)**
 
+**Paper revision, version 1.0.0:**
+[Table III, Table VI and Appendices C / D-C reproduction](experiments/paper_revision/README.md).
+This self-contained companion contains the revised attack-cost, ablation and
+rank calculations, inputs, expected outputs and verification entry point.
+The paper's implementation and PMU measurement baseline remains
+[the originally cited revision](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
+
 ## Where to look
 
 ```text
@@ -24,6 +31,7 @@ examples/          Small runnable encryption example
 | Inspect n=1024,q=307/331/373 | [implementations/c/ntru1024](implementations/c/ntru1024) |
 | Inspect the 16 selected S/D profiles | [implementations/c/single_double](implementations/c/single_double/README.md) |
 | Reproduce the mathematical calculations | [experiments](experiments/README.md) |
+| Reproduce the paper revision's Tables III / VI and Appendices C / D-C | [experiments/paper_revision](experiments/paper_revision/README.md) |
 | Build or measure C implementations | [benchmarks](benchmarks/README.md) |
 | Find raw data and paper-ready tables | [results](results/README.md) |
 
