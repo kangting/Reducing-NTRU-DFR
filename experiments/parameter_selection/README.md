@@ -4,6 +4,8 @@
 `baseline/` supplies their arithmetic, ideal-sampler and cost-model dependencies.
 The folders have descriptive names; original scientific profile IDs remain intact.
 The C byte-contract generator reads `refined/parameters_refined.json`.
+The `validation.source_files` field records note filenames from the parameter
+analysis archive. The calculations below use the checked-in scripts and inputs.
 
 With the repository's NumPy/SciPy environment activated, run:
 
@@ -26,7 +28,10 @@ f-parity and excludes g=0 before the coordinate union bound. D uses exact ration
 joint transfer matrices and correction-aware event inclusion. Strict S inputs can
 also be evaluated with `single/deps/correct.exact_certificate(n,q,laws,256)`.
 
-Cost commands need `--all` for the selected IDs. They evaluate GSA/MATZOV paths
-and conditional-event coverage, not a full attack suite or KEM proof. Rounded b
+Cost commands need `--all` for the selected IDs. The two `new_double` JSON
+files supply the selected moduli, laws and message lengths for cost calculations.
+The commands evaluate GSA/MATZOV paths and conditional-event coverage.
+For the manuscript estimates, see the [paper reproducibility package](../paper_reproduction/README.md).
+Rounded b
 is an approximate negative binary logarithm of a bound. Ideal-sampler functional
 checks do not replace [the C/oracle checks](../../implementations/c/single_double/README.md).

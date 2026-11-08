@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "revision": "review-conditioned and correction-aware refinement",
+  "revision": "accepted-key conditioning and correction-aware bounds",
   "definitions": {
     "C_Q": "MATZOV modeled GSA structural diagnostics; not Core-SVP and not full KEM security",
     "b": "approximate -log2(certified accepted-key-average correctness upper bound)",

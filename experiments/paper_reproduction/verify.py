@@ -1,4 +1,4 @@
-"""Regenerate the revision calculations and compare them with the paper."""
+"""Regenerate the calculations and check the reported values."""
 
 import argparse
 import hashlib
@@ -115,7 +115,7 @@ def main():
 
     env = os.environ.copy()
     env.pop("PYTHONOPTIMIZE", None)
-    with tempfile.TemporaryDirectory(prefix="ntru-revision-audit-") as folder:
+    with tempfile.TemporaryDirectory(prefix="ntru-paper-check-") as folder:
         work = Path(folder)
         for path in (ROOT / "reproduction").iterdir():
             if path.suffix == ".py" or path.name == "security_inputs.json":
@@ -136,7 +136,7 @@ def main():
             args.out.mkdir(parents=True)
             for _, name in COMMANDS:
                 shutil.copy2(work / name, args.out / name)
-    print("All revision audit checks passed.")
+    print("All reproducibility checks passed.")
 
 
 if __name__ == "__main__":

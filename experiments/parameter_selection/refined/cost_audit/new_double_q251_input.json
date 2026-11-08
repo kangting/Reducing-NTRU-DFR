@@ -52,36 +52,6 @@
       "quantum": 250.8,
       "dfr": 163
     },
-    "certificate": {
-      "n": 1024,
-      "q": 347,
-      "internal_message_bits": 256,
-      "message_law": [
-        "1/2",
-        "0",
-        "1/2"
-      ],
-      "accepted_key_average_zero_wrap_bound_exponent": 172.38622767857578,
-      "target": 163,
-      "exact_integer_inequality_passes": true,
-      "acceptance_probability": 0.4988460656419189,
-      "certificate_method": "17-atom enumeration; exact integer one-coordinate convolution;2n union bound; exact acceptance correction",
-      "correction_benefit_used": false,
-      "external_message_bits": 256,
-      "shared_key_bits": 256,
-      "mask_bytes": 32,
-      "public_key_bytes": 1081,
-      "ciphertext_bytes": 1113,
-      "sum_bytes": 2194
-    },
-    "bound_exponent": 172.38622767857578,
-    "minima": {
-      "classical": 270.08505216876586,
-      "quantum": 251.60912470669115
-    },
-    "public_key_bytes": 1081,
-    "ciphertext_bytes": 1113,
-    "sum_bytes": 2194,
     "status": "experimental W-code; additional message-distribution security analysis required"
   }
 ]

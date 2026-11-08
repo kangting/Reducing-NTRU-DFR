@@ -2,16 +2,15 @@
 
 Implementations, mathematical experiments and measured results for the paper.
 
-**[Result tables (PDF)](results/tables/publication-tables.pdf)** ·
+**[Archived result tables (PDF)](results/tables/publication-tables.pdf)** ·
 **[Performance data (CSV)](results/summary/performance.csv)** ·
 **[Reproduction guide](benchmarks/README.md)**
 
-**Paper revision, version 1.0.0:**
-[Table III, Table VI and Appendices C / D-C reproduction](experiments/paper_revision/README.md).
-This self-contained companion contains the revised attack-cost, ablation and
-rank calculations, inputs, expected outputs and verification entry point.
-The paper's implementation and PMU measurement baseline remains
-[the originally cited revision](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
+**[Paper reproducibility package](experiments/paper_reproduction/README.md)** (v1.0.1).
+The package contains the scripts, inputs and reference outputs for the
+recovery-cost estimates, controls and rank checks in Tables III and VI
+and Appendices C and D-C. The implementation and benchmark records are
+available at [commit `b9ac24e`](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
 
 ## Where to look
 
@@ -31,7 +30,7 @@ examples/          Small runnable encryption example
 | Inspect n=1024,q=307/331/373 | [implementations/c/ntru1024](implementations/c/ntru1024) |
 | Inspect the 16 selected S/D profiles | [implementations/c/single_double](implementations/c/single_double/README.md) |
 | Reproduce the mathematical calculations | [experiments](experiments/README.md) |
-| Reproduce the paper revision's Tables III / VI and Appendices C / D-C | [experiments/paper_revision](experiments/paper_revision/README.md) |
+| Reproduce Tables III and VI and Appendices C and D-C | [experiments/paper_reproduction](experiments/paper_reproduction/README.md) |
 | Build or measure C implementations | [benchmarks](benchmarks/README.md) |
 | Find raw data and paper-ready tables | [results](results/README.md) |
 
@@ -79,7 +78,7 @@ The `ntru` import name remains the same; its source and parameter JSON are in
 
 Performance uses actual task hardware CPU cycles, divided by 1,000 for kcycles.
 REF is C; Python is the independent oracle. The original n=512, older n=1024 and
-revised S/D measurements are separate cohorts. DFR entries are mathematical
+S/D measurements are separate cohorts. DFR entries are mathematical
 bounds, not observed rare-failure rates. Structural C/Q cost diagnostics are not
 full-KEM security proofs or NIST classifications. Message, residue and shared-key
 output lengths are recorded separately. Details are in [results](results/README.md).

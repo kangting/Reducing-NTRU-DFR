@@ -1,25 +1,25 @@
 {
-  "artifact": "NTRU revision audit",
-  "version": "1.0.0",
+  "artifact": "NTRU paper reproducibility package",
+  "version": "1.0.1",
   "date": "2026-11-08",
-  "archive": "NTRU_revision_audit_20261108.zip",
+  "archive": "NTRU_paper_reproduction_1.0.1.zip",
   "fixed_public_implementation_revision": "b9ac24ea2edfa377b7282ba0d96659bf7e88ce82",
   "validated_python": "3.12.14",
   "validated_numpy": "2.3.5",
   "files": {
     ".gitignore": "0de8aba498a3e63afce54dd2cae0dafed9d6d701616babb7a7dee1f82ccb04bb",
-    "README.md": "a5749bb8c9fc3837f48c6baac2b4ba93a00898045022e80f88089092ffd4d6e0",
+    "README.md": "0a246541bdced26adda169d2302a7cf34d64b83a43f0beffa38421e449f717dd",
     "expected/ablation_check.json": "5e9834edbbf38b1092d222c30fa7c942665beb9707fdfede07d8f40f56887003",
     "expected/rank_check.json": "a3f1cc99baf26c851555e3e3bdd342ac244f5507d652bd90c0860e6d692d575e",
     "expected/security_results.json": "33faa50e2f49f71e132856f93e9f92f030c69ab03e9a10d19f9ff76fbc6e9fe4",
     "paper_values.json": "3cb8b6acce3e6f3e16e0a360ecad9fe1b16af9d7920829ae5d6019919d8412cc",
-    "reproduction/ablation_check.py": "cc2bbd9bacad21fc271d9958ca31727b6f76c342f2e76d3df20aac8e8596fda7",
+    "reproduction/ablation_check.py": "e23ce284fd219553f761350bdf007a386bc3bd9ba0a1a46a6d597c83af1716b9",
     "reproduction/cost_model.py": "b615c7a0ccd713b3a2c299b4e5464decee524668186d932a195e70977d8714a4",
     "reproduction/rank_check.py": "8b1dd6acb08f5b034d3c6f906680e54c597ec1f7efe94bb098197d464dd76e27",
     "reproduction/security_audit.py": "79a6e50d07b5e1f58245a7307e79eae92fb0649ed1904c33aa2eed2e81e44ce9",
     "reproduction/security_inputs.json": "88908ac15394bcea983a6306d8a46c75eebbc1a5b338cfdabbd06affc75876b5",
     "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
-    "verification.log": "d7e77701da56fb4f5bd346dbea87969f4e735530ec36cec4cbcb1a2af9ec72f5",
-    "verify.py": "bd7ee12eeff0488ccb3d5c5860bac3700710c8a3b04d7ceef9c05994fd3569f5"
+    "verification.log": "e90c4a3cf8b42757cdbde987dc127e58c6160abbad444fd81c74f8fe65d7987f",
+    "verify.py": "1773442771b3eca7ef6b1bbadb50d21f12eed6785ceacc345d6b5585b2296f11"
   }
 }

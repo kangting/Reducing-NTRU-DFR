@@ -1,7 +1,8 @@
 # Audited family KEM tables
 
 Hardware CPU-cycle measurements are displayed as kcycles (cycles / 1000). All intervals are bootstrap 95% intervals.
-Size/model metadata are attributed archive values, separate from local performance. The illustration supplies layout only.
+Size and model metadata are archived values with source attribution. Timing
+tables report local measurements.
 
 ## Primary family parameters and attributed diagnostics
 
@@ -13,7 +14,10 @@ Size/model metadata are attributed archive values, separate from local performan
 | **D1024-q251** | 256/256/256 | 1053 | 1021 | 2074 | 278.68 | 259.33 | 166.86 |
 
 M/u/K are external message / internal residue / shared-key output lengths in bits.
-C/Q are supplied structural GSA/MATZOV diagnostics; b is approximate -log2(B), not a rounded strict inequality.
+C/Q are historical GSA/MATZOV diagnostics from profile screening. The
+[paper reproducibility package](../../experiments/paper_reproduction/README.md)
+reports the recovery calculations for Tables III and VI. The exponent b is
+the approximate value of -log2(B).
 These columns are not a full KEM security claim or a NIST certificate. No compression denominator is assigned.
 
 ## Primary profiles and matched peers: local KEM performance
@@ -38,7 +42,7 @@ Blank performance cells are correctness exclusions, never zero costs. Batch coun
 [2] END-1024 / REF: Shared-key preflight failed through the preserved-source adapter; no timing is ranked
 [3] END-1024 / AVX2: Shared-key preflight failed through the preserved-source adapter; no timing is ranked
 
-## Appendix: all16 selected family profiles
+## Extended table: all 16 selected family profiles
 
 | Scheme | M/u/K<br>(bits) | CT<br>(bytes) | PK<br>(bytes) | CT+PK<br>(bytes) | C diag. | Q diag. | b ≈ |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -63,7 +67,7 @@ M/u/K are external message / internal residue / shared-key output lengths in bit
 C/Q are supplied structural GSA/MATZOV diagnostics; b is approximate -log2(B), not a rounded strict inequality.
 These columns are not a full KEM security claim or a NIST certificate. No compression denominator is assigned.
 
-## Appendix: all16 family REF / AVX2 results
+## Extended table: REF and AVX2 results for all 16 family profiles
 
 | Scheme | REF KeyGen<br>(kcycles) | REF Encaps<br>(kcycles) | REF Decaps<br>(kcycles) | AVX2 KeyGen<br>(kcycles) | AVX2 Encaps<br>(kcycles) | AVX2 Decaps<br>(kcycles) |
 |---|---:|---:|---:|---:|---:|---:|
@@ -117,7 +121,9 @@ BAT API keys and ciphertexts include one-byte headers beyond the header-free sou
 | DAWN-beta-512 | 128/128/— | 450 | 514 | 134.30 | 134.10 | 130.00 |
 | DAWN-beta-1024 | 256/256/— | 1027 | 1027 | 266.50 | 251.20 | 138.00 |
 
-Source-only sizes and model/DFR statements; no illustration timing is used.
+This table records source sizes and model/DFR statements.
+For END-512, exponent 130 describes the base average-error estimate.
+The manuscript comparison uses the bound after the worst-message transformation.
 Published C/Q and DFR statements use heterogeneous models and must not be ranked as a common security scale.
 Exact attribution, relations, qualifications and URLs are retained in metadata JSON/CSV and Markdown.
 

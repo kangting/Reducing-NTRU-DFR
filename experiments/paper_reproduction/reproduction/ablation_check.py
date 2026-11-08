@@ -1,4 +1,4 @@
-"""Exact representative controls for the revised paper, Python 3.10+.
+"""Exact correctness controls for representative profiles, Python 3.10+.
 
 Run: python3 reproduction/ablation_check.py
 The only non-standard dependency is numpy, used for exact object-integer

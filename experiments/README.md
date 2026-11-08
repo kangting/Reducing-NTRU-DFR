@@ -1,27 +1,27 @@
 # Mathematical experiments
 
-## Paper revision calculations
+## Reproducing the paper's calculations
 
-The [version 1.0.0 revision companion](paper_revision/README.md) reproduces
+The [paper reproducibility package](paper_reproduction/README.md) reproduces
 main Table III and Section VI-B, supplementary Table VI, the Appendix C
 J-off/correction-off bounds, and Appendix D-C rank checks. It contains its own
 inputs, pinned dependency, expected JSON outputs and paper-value comparison.
 Use its separate environment:
 
 ```sh
-cd experiments/paper_revision
+cd experiments/paper_reproduction
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
 python verify.py --out rerun
 ```
 
-These are later mathematical calculations. Their citation is separate from the
-[original implementation/PMU baseline](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
-No new BKZ recovery experiment or CPU-cycle measurement is performed by this
-companion. Existing performance records remain under `results/` and are analyzed
-with `benchmarks/analyze.py`. See the companion README for the paper-to-script map
-and immutable references to the historical parameter-selection calculations.
+The package computes model-based recovery estimates and checks rank and
+correctness bounds. Its README maps the tables and appendices to scripts and
+reference outputs. The implementation and PMU records are archived at
+[commit `b9ac24e`](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
+From the repository root, run `python3 benchmarks/analyze.py` to process the
+recorded measurements under `results/`.
 
 ## Original construction and parameter calculations
 
@@ -44,7 +44,7 @@ Exact finite-law bounds use integer/rational arithmetic; Gaussian and lattice-co
 calculations are numerical. A bound exponent is not an empirical failure rate.
 These commands recompute selected configurations, not historical searches.
 
-[parameter_selection/](parameter_selection/README.md) contains the revised S/D
+[parameter_selection/](parameter_selection/README.md) contains the S/D
 calculations. `refined/` is the selected analysis and `baseline/` supplies the
 minimal arithmetic/reference dependencies. Performance experiments are separately
 organized under [benchmarks/](../benchmarks/README.md).

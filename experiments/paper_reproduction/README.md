@@ -1,20 +1,18 @@
-# NTRU revision audit
+# NTRU paper reproducibility package
 
-Version 1.0.0, 2026-11-08. This package reproduces the calculations added
-for the revision of *Reducing NTRU Decryption Noise with Complementary
-Gaussian Sampling*. It uses the four profiles S512-q251, S1024-q347,
+Version 1.0.1, 2026-11-08. This package reproduces the recovery-cost
+estimates, correctness controls, and rank checks for S512-q251, S1024-q347,
 D512-q157, and D1024-q251.
 
-The paper's existing implementation and PMU records are cited at
+The paper cites the implementation and benchmark records at commit
 [`b9ac24ea2edfa377b7282ba0d96659bf7e88ce82`](https://github.com/kangting/Reducing-NTRU-DFR/tree/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82).
-This companion package supplies the later mathematical calculations.
 
 ## Run
 
 From the repository or the extracted archive root:
 
 ```sh
-cd experiments/paper_revision
+cd experiments/paper_reproduction
 python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -43,7 +41,7 @@ python ablation_check.py
 | Supplementary Appendix D-C | `rank_check.py` | `rank_check.json`, modular ranks, rank-loss probabilities, and exhaustive counts |
 
 The cost calculation uses the GSA criterion and the MATZOV constants from
-the estimator revision cited in the paper. It minimizes classical work
+the estimator commit cited in the paper. It minimizes classical work
 over feasible dimension and block-size pairs. The reported quantum work
 uses the classical optimum, while `Q_min` gives the independent quantum
 minimum. These values are model estimates. The event probabilities and
@@ -77,14 +75,14 @@ The initial local S search used the covariance proxy in four orders
 The final recorded S and D cost checks also used the four corresponding
 coefficient-variance routes. Those checks minimized classical and quantum
 work separately and treated the affine-r guesses as supplied.
-The factored-message, factored-r, and joint-key routes were added in the
-revision. See the archived [parameter selection guide](https://github.com/kangting/Reducing-NTRU-DFR/blob/9548e2942cb776b98ae6e7170f16e64937706f51/experiments/parameter_selection/README.md)
+The paper's recovery diagnostics also include the factored-message,
+factored-r, and joint-key routes. See the archived [parameter selection guide](https://github.com/kangting/Reducing-NTRU-DFR/blob/9548e2942cb776b98ae6e7170f16e64937706f51/experiments/parameter_selection/README.md)
 and [historical cost calculation](https://github.com/kangting/Reducing-NTRU-DFR/blob/9548e2942cb776b98ae6e7170f16e64937706f51/experiments/parameter_selection/refined/cost_audit/audit.py).
 
 ## Existing implementation and cycle results
 
-For the original implementation and the published PMU run, start at
-[`paper/README.md` in the cited revision](https://github.com/kangting/Reducing-NTRU-DFR/blob/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82/paper/README.md).
+For the implementation and recorded PMU measurements, start at
+[`paper/README.md` at commit `b9ac24e`](https://github.com/kangting/Reducing-NTRU-DFR/blob/b9ac24ea2edfa377b7282ba0d96659bf7e88ce82/paper/README.md).
 From that checkout, `python3 paper/analyze.py` processes the archived
 records for main Table V and supplementary Table VII.
 The family raw data are `paper/data/family-raw.json.gz`. The later
@@ -93,15 +91,11 @@ and moves the analyzer to `benchmarks/analyze.py`
 ([later guide](https://github.com/kangting/Reducing-NTRU-DFR/blob/9548e2942cb776b98ae6e7170f16e64937706f51/benchmarks/README.md)).
 Both raw file paths resolve to Git blob
 `2c5c7d4fcc523f11e20c2b60cce92a143c25d547` in their respective
-revisions. The original correctness scripts for Table II are linked in
-the parameter selection guide. This archive records a calculation rerun.
+commits. The parameter selection guide links the correctness scripts for
+Table II.
 
-## Cite the release
+## Package identification
 
-To add the package to GitHub, extract it at the repository root and
-commit `experiments/paper_revision/`. Keep the implementation citation
-at its existing revision and cite the audit directory at the commit
-that adds it. For a submission attachment, the equivalent locator is
-`NTRU_revision_audit_20261108.zip`, version 1.0.0, entry point
-`experiments/paper_revision/README.md`. The checksums and the
-verification transcript are included with the archive.
+The archive is named `NTRU_paper_reproduction_1.0.1.zip`. Its entry
+point is `experiments/paper_reproduction/README.md`. The manifest lists
+the file checksums, and `verification.log` records the verification run.

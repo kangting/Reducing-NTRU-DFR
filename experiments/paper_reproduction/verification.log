@@ -1,4 +1,4 @@
-NTRU revision audit 1.0.0
+NTRU paper reproducibility package 1.0.1
 Python 3.12.14, NumPy 2.3.5
 Manifest: PASS
 security_audit.py: PASS (security_results.json matches expected output)
@@ -18,4 +18,4 @@ Table VI D1024/factor_even_r: PASS
 Table VI D1024/factor_affine_r: PASS
 Appendix C: PASS (reported exponents and exact certificate fields)
 Appendix D-C: PASS (rank checks and exception exponents)
-All revision audit checks passed.
+All reproducibility checks passed.
